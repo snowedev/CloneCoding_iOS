@@ -19,13 +19,9 @@ class ViewController: UIViewController {
         
         secondhandSellingContainer.alpha = 1.0
         neighborlifeContainer.alpha = 0.0
-                
-        //segmentControl.addUnderlineForSelectedSegment()
-
     }
     
     @IBAction func segmentChange(_ sender: UISegmentedControl) {
-        //segmentControl.changeUnderlinePosition()
                 
         switch sender.selectedSegmentIndex {
             case 0:
@@ -40,6 +36,7 @@ class ViewController: UIViewController {
                 break
             default:
                 break
+                
         }
     }
 }
