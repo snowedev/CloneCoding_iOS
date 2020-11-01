@@ -9,8 +9,8 @@
     * 따라서 명암 효과가 필요함
 * ProductDetail 뷰 컨트롤에서 하단부에 CollectionView 구현 
 
-### `내가 구현하고자 했던 화면📲`
-![original](./CarrotMarket/CarrotMarket/original_carrotmarket.gif)
+### `내가 구현하고자 했던 화면(아이폰8) 📲`
+<img height="500" src="./CarrotMarket/original_carrotmarket.gif">
 
-### `내가 구현한 화면😂`
-![simul](./CarrotMarket/CarrotMarket/carrotmarket_simul.gif)
+### `내가 구현한 화면(시뮬레이션은 아이폰11로 진행했습니다!) 😂`
+<img height="600" src="./CarrotMarket/carrotmarket_simul.gif">
