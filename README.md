@@ -1,2 +1,9 @@
-# iOS_clone_coding
-27기 SOPT iOS 클론 코딩 스터디🖨
+# iOS Clone coding Study
+## wonseok🙋🏽‍♂️
+
+### 개발환경 ＞ `Swift 5` / `Xcode12`
+
+| 시작 날짜 | 클론 주제| 결과물 |
+|-------|----------|-------|
+| 10/11~ |  당근마켓 |[🥕](./CarrotMarket)|
+---
