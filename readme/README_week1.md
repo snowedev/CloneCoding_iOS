@@ -2,7 +2,7 @@
 # 당근마켓🥕 클론
 
 ### `내가 구현하고자 하는 화면(아이폰8) 📲`
-<img height="500" src="./readme/simul/original_carrotmarket.gif">
+<img height="500" src="./simul/original_carrotmarket.gif">
 
 ## 1주차
 ### `보완하고자 하는 부분`
@@ -15,4 +15,4 @@
 * ProductDetail 뷰 컨트롤에서 하단부에 CollectionView 구현 
 
 ### `내가 구현한 화면(시뮬레이션은 아이폰11로 진행했습니다!) 😂`
-<img height="600" src="./readme/simul/carrotmarket_week1_simul.gif">
+<img height="600" src="./simul/carrotmarket_week1_simul.gif">
