@@ -12,4 +12,4 @@
 * ProductDetail 뷰 컨트롤에서 하단부에 CollectionView 구현
 
 ### `내가 구현한 화면(시뮬레이션은 아이폰11로 진행했습니다!) 😂`
-<img height="600" src="./simul/carrotmarket_week2_simul.gif">
+<img height="600" src="./readme/simul/carrotmarket_week2_simul.gif">
