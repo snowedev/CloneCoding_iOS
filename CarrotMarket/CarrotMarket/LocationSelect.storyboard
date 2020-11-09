@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location SelectVC-->
+        <scene sceneID="gRJ-GX-QfD">
+            <objects>
+                <viewController storyboardIdentifier="LocationSelectVC" id="917-cb-ztO" customClass="LocationSelectVC" customModule="CarrotMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HO2-x7-KAc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZeD-3R-0fP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="818" id="kQ2-wl-gto"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JDr-Ok-9iq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JDr-Ok-9iq" firstAttribute="bottom" secondItem="ZeD-3R-0fP" secondAttribute="bottom" id="An3-yr-zId"/>
+                            <constraint firstItem="JDr-Ok-9iq" firstAttribute="trailing" secondItem="ZeD-3R-0fP" secondAttribute="trailing" id="SgU-nG-vlr"/>
+                            <constraint firstItem="ZeD-3R-0fP" firstAttribute="leading" secondItem="JDr-Ok-9iq" secondAttribute="leading" id="pSZ-p7-HOL"/>
+                            <constraint firstItem="ZeD-3R-0fP" firstAttribute="top" secondItem="JDr-Ok-9iq" secondAttribute="top" id="t4r-jv-6Fh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locselectTableView" destination="ZeD-3R-0fP" id="pNb-Fb-wMd"/>
+                        <outlet property="locselectTableViewHeight" destination="kQ2-wl-gto" id="33d-7V-F2I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8a-HM-0rD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

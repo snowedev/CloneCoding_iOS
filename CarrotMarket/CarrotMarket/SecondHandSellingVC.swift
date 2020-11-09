@@ -8,7 +8,19 @@
 import UIKit
 
 class SecondHandSellingVC: UIViewController {
-    @IBOutlet weak var productListTableView: UITableView!
+    static let identifier = "SecondeHandSelling"
+    
+    var headerHeight: NSLayoutConstraint!
+    var upperheader: UIView!
+    var minHeight: CGFloat = 0.0
+    var maxHeight: CGFloat = 0.0
+
+    
+    @IBOutlet weak var productListTableView: UITableView!{
+        didSet {
+                productListTableView.contentInset = UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0)
+             }
+    }
     
     var prolist: [ProList] = []
     override func viewDidLoad() {
@@ -43,6 +55,20 @@ extension SecondHandSellingVC: UITableViewDelegate {
             dvc.prolist = selectProduct
             self.navigationController?.pushViewController(dvc, animated: true)
         }
+    }
+    
+    // 스크롤에 따라 최 상단 헤더뷰 Collapsable하게
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y < 0 {
+            headerHeight?.constant = max(abs(scrollView.contentOffset.y), minHeight)
+        }
+        else{
+            headerHeight?.constant = minHeight
+        }
+        
+        let offset = -scrollView.contentOffset.y
+        let transparent = (offset-100) / 50
+        upperheader?.alpha = transparent
     }
     
 }

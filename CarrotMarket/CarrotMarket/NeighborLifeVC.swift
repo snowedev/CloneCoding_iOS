@@ -9,6 +9,8 @@ import UIKit
 
 class NeighborLifeVC: UIViewController {
 
+    @IBOutlet var neighborlifeView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

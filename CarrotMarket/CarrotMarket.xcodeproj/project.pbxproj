@@ -18,6 +18,9 @@
 		54445FBF254C0CEF008F4675 /* ProductDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54445FBE254C0CEF008F4675 /* ProductDetail.storyboard */; };
 		54446004254EAB95008F4675 /* SecondHandSellingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54446003254EAB95008F4675 /* SecondHandSellingVC.swift */; };
 		54446007254EACA6008F4675 /* NeighborLifeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54446006254EACA6008F4675 /* NeighborLifeVC.swift */; };
+		5486F98C25553614008FC346 /* LocationSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5486F98B25553614008FC346 /* LocationSelectVC.swift */; };
+		5486F98F25553621008FC346 /* LocationSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5486F98E25553621008FC346 /* LocationSelect.storyboard */; };
+		5486FA1125594A87008FC346 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5486FA1025594A87008FC346 /* CustomSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		54445FBE254C0CEF008F4675 /* ProductDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetail.storyboard; sourceTree = "<group>"; };
 		54446003254EAB95008F4675 /* SecondHandSellingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHandSellingVC.swift; sourceTree = "<group>"; };
 		54446006254EACA6008F4675 /* NeighborLifeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborLifeVC.swift; sourceTree = "<group>"; };
+		5486F98B25553614008FC346 /* LocationSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectVC.swift; sourceTree = "<group>"; };
+		5486F98E25553621008FC346 /* LocationSelect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationSelect.storyboard; sourceTree = "<group>"; };
+		5486FA1025594A87008FC346 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +72,12 @@
 		54445FA2254BFD5B008F4675 /* CarrotMarket */ = {
 			isa = PBXGroup;
 			children = (
+				5486F98B25553614008FC346 /* LocationSelectVC.swift */,
+				5486F98E25553621008FC346 /* LocationSelect.storyboard */,
 				54445FA3254BFD5B008F4675 /* AppDelegate.swift */,
 				54445FA5254BFD5B008F4675 /* SceneDelegate.swift */,
 				54445FA7254BFD5B008F4675 /* ViewController.swift */,
+				5486FA1025594A87008FC346 /* CustomSegmentedControl.swift */,
 				54446003254EAB95008F4675 /* SecondHandSellingVC.swift */,
 				54445FA9254BFD5B008F4675 /* Main.storyboard */,
 				54446006254EACA6008F4675 /* NeighborLifeVC.swift */,
@@ -142,6 +151,7 @@
 				54445FB0254BFD5C008F4675 /* LaunchScreen.storyboard in Resources */,
 				54445FAD254BFD5C008F4675 /* Assets.xcassets in Resources */,
 				54445FAB254BFD5B008F4675 /* Main.storyboard in Resources */,
+				5486F98F25553621008FC346 /* LocationSelect.storyboard in Resources */,
 				54445FBF254C0CEF008F4675 /* ProductDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +166,9 @@
 				54445FB9254C0005008F4675 /* ProductViewCell.swift in Sources */,
 				54445FA8254BFD5B008F4675 /* ViewController.swift in Sources */,
 				54446007254EACA6008F4675 /* NeighborLifeVC.swift in Sources */,
+				5486F98C25553614008FC346 /* LocationSelectVC.swift in Sources */,
 				54445FBC254C0CAE008F4675 /* ProductDetailViewController.swift in Sources */,
+				5486FA1125594A87008FC346 /* CustomSegmentedControl.swift in Sources */,
 				54445FA4254BFD5B008F4675 /* AppDelegate.swift in Sources */,
 				54445FA6254BFD5B008F4675 /* SceneDelegate.swift in Sources */,
 				54446004254EAB95008F4675 /* SecondHandSellingVC.swift in Sources */,
