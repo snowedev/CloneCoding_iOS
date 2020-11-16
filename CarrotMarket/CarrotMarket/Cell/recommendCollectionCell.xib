@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recommendCollectionCell" id="c27-Ky-LId" customClass="recommendCollectionCell" customModule="CarrotMarket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="231" height="226"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ouy-hA-AkP">
+                <rect key="frame" x="0.0" y="0.0" width="231" height="226"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKK-a8-W8b">
+                        <rect key="frame" x="0.0" y="0.0" width="231" height="226"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x3w-9b-4iy">
+                                <rect key="frame" x="0.0" y="0.0" width="231" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x3w-9b-4iy" secondAttribute="height" multiplier="15:10" id="Bd6-rB-wxe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OAK-sC-OWW">
+                                <rect key="frame" x="0.0" y="159" width="53" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="손목시계" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B25-Dg-agQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5,000 원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJS-gt-Tov">
+                                        <rect key="frame" x="0.0" y="21" width="53" height="16"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x3w-9b-4iy" firstAttribute="top" secondItem="DKK-a8-W8b" secondAttribute="top" id="HAh-Qt-p6o"/>
+                            <constraint firstAttribute="trailing" secondItem="x3w-9b-4iy" secondAttribute="trailing" id="Ofw-lU-73p"/>
+                            <constraint firstItem="x3w-9b-4iy" firstAttribute="leading" secondItem="DKK-a8-W8b" secondAttribute="leading" id="eK1-ld-sS5"/>
+                            <constraint firstItem="OAK-sC-OWW" firstAttribute="top" secondItem="x3w-9b-4iy" secondAttribute="bottom" constant="5" id="ise-Tf-6cs"/>
+                            <constraint firstItem="OAK-sC-OWW" firstAttribute="leading" secondItem="x3w-9b-4iy" secondAttribute="leading" id="vTq-kL-etg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="DKK-a8-W8b" secondAttribute="trailing" id="2sG-cC-0VH"/>
+                    <constraint firstAttribute="bottom" secondItem="DKK-a8-W8b" secondAttribute="bottom" id="Yc9-zK-X3Y"/>
+                    <constraint firstItem="DKK-a8-W8b" firstAttribute="leading" secondItem="Ouy-hA-AkP" secondAttribute="leading" id="bT8-0u-bLG"/>
+                    <constraint firstItem="DKK-a8-W8b" firstAttribute="top" secondItem="Ouy-hA-AkP" secondAttribute="top" id="qFc-4C-DlW"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="231" height="226"/>
+            <connections>
+                <outlet property="recommendImageView" destination="x3w-9b-4iy" id="DxQ-YX-9Xq"/>
+                <outlet property="recommendNameLabel" destination="B25-Dg-agQ" id="6zC-fR-lew"/>
+                <outlet property="recommendPriceLabel" destination="DJS-gt-Tov" id="XDu-UC-Op5"/>
+            </connections>
+            <point key="canvasLocation" x="-402.17391304347831" y="30.803571428571427"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

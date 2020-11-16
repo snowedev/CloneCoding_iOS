@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "223968FC-322D-49C4-92A8-EEA4E26C7F66"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "439E9948-1BF2-4E49-86E5-5433349C1811"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarrotMarket/ProductDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "ProductDetailViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C8FCEB4-752A-4935-B354-BA68A6471863"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarrotMarket/ProductDetail/userOtherProductCollectionCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "1C8FCEB4-752A-4935-B354-BA68A6471863 - 3afee79348702d02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarrotMarket.userOtherProductCollectionCell.__deallocating_deinit"
+                  moduleName = "CarrotMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ws/Desktop/iOS/iOS_clone_coding/CarrotMarket/CarrotMarket/ProductDetail/userOtherProductCollectionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "1C8FCEB4-752A-4935-B354-BA68A6471863 - 5322ac286fcf00e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarrotMarket.userOtherProductCollectionCell.__allocating_init(frame: __C.CGRect) -&gt; CarrotMarket.userOtherProductCollectionCell"
+                  moduleName = "CarrotMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ws/Desktop/iOS/iOS_clone_coding/CarrotMarket/CarrotMarket/ProductDetail/userOtherProductCollectionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "1C8FCEB4-752A-4935-B354-BA68A6471863 - 710c7ca71d1f94eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarrotMarket.userOtherProductCollectionCell.init(frame: __C.CGRect) -&gt; CarrotMarket.userOtherProductCollectionCell"
+                  moduleName = "CarrotMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ws/Desktop/iOS/iOS_clone_coding/CarrotMarket/CarrotMarket/ProductDetail/userOtherProductCollectionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "165">
+               </Location>
+               <Location
+                  uuid = "1C8FCEB4-752A-4935-B354-BA68A6471863 - c45a07e73292631e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarrotMarket.userOtherProductCollectionCell.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CarrotMarket.userOtherProductCollectionCell&gt;"
+                  moduleName = "CarrotMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ws/Desktop/iOS/iOS_clone_coding/CarrotMarket/CarrotMarket/ProductDetail/userOtherProductCollectionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "1C8FCEB4-752A-4935-B354-BA68A6471863 - db257b33fca8dcae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CarrotMarket.userOtherProductCollectionCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CarrotMarket.userOtherProductCollectionCell&gt;"
+                  moduleName = "CarrotMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ws/Desktop/iOS/iOS_clone_coding/CarrotMarket/CarrotMarket/ProductDetail/userOtherProductCollectionCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
