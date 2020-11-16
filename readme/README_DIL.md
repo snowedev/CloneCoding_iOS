@@ -4,6 +4,7 @@
 ## 📌 Popover
 
 `📲`
+
 <img height="300" src="./simul/Popover_simul.gif">
 
 `Solution 1`-난 이 방법 사용
@@ -19,8 +20,10 @@
 * [Segue를 통한 뷰 컨트롤러 전환과 데이터 교환 방법](https://soooprmx.com/archives/8873)
 
 ## 📌 Segment Custom
+
 `📲`
-<img height="500" src="./simul/segment_simul.gif">
+
+<img height="500" src="./simul/Segment_simul.gif">
 
 `Solution 1`
 * [Segment Custom 오픈 소스](https://github.com/Code-With-Coffee/CustomSegmentedControl)
@@ -44,6 +47,7 @@
 ## 📌 Floating Button
 
 `📲`
+
 <img height="500" src="./simul/Floating_simul.gif">
 
 * [플로팅 버튼](https://swieeft.github.io/2020/03/21/FloatingButton.html)
@@ -51,6 +55,7 @@
 ## 📌 당근마켓 구버젼 최상단 헤더뷰 스스륵 사라지는 거 구현
 
 `📲`
+
 <img height="500" src="./simul/HeaderVIew_Collapsable_simul.gif">
 
 * [유뷰브 자료](https://www.youtube.com/watch?v=y7enrwW7C4E&t=768s)
