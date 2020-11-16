@@ -63,6 +63,8 @@
 * [유뷰브 자료](https://www.youtube.com/watch?v=y7enrwW7C4E&t=768s)
 * [갓택오버플로우 자료](https://stackoverflow.com/questions/25263343/how-to-change-alpha-value-along-with-scrolling)
 * ### 개인적인 팁
+`일단 나도 두번째 링크의 코드를 토대로 값을 이렇게도 해보고 저렇게도 해봤는데..결국에는 참조 링크의 코드에서 좀 변형이 되긴 했다.`
+
 * 사라지게 하고 싶은 헤더뷰의 Height값을 Outlet-Constraint로 지정하고 진행
 * 헤더뷰가 휴대폰의 상태바를 지나치며 사라지게 하고 싶다면?
 * 스크롤 화면을 구성하는 전체 뷰(스크롤뷰, 테이블 뷰, 컬렉션 뷰)의 AutoLayout-top과

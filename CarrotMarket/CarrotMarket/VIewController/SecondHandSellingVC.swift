@@ -12,8 +12,8 @@ class SecondHandSellingVC: UIViewController {
     
     var headerHeight: NSLayoutConstraint!
     var upperheader: UIView!
-    var minHeight: CGFloat = 0.0
-    var maxHeight: CGFloat = 0.0
+    var minHeight: CGFloat = 0.0 //maxH
+    var maxHeight: CGFloat = 0.0 //minH
     
     
     @IBOutlet weak var productListTableView: UITableView!{
@@ -65,10 +65,13 @@ extension SecondHandSellingVC: UITableViewDelegate {
         else{
             headerHeight?.constant = minHeight
         }
-        
+//        let totalScroll = scrollView.contentSize.height - scrollView.bounds.size.height
         let offset = -scrollView.contentOffset.y
-        let transparent = (offset-100) / 50
+        let transparent = (offset-50)/100
         upperheader?.alpha = transparent
+        
+        
+
     }
     
 }
