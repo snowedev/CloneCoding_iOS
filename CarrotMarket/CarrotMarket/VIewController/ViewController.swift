@@ -17,11 +17,13 @@ class ViewController: UIViewController, CustomSegmentedControlDelegate {
             secondhandSellingContainer.alpha = 1.0
             neighborlifeContainer.alpha = 0.0
             categoryBtn.isHidden = false
+            floatingButton.isHidden = false
             break
         case 1:
             secondhandSellingContainer.alpha = 0.0
             neighborlifeContainer.alpha = 1.0
             categoryBtn.isHidden = true
+            floatingButton.isHidden = true
             break
         default:
             break

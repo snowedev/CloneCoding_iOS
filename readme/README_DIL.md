@@ -56,7 +56,7 @@
 
 `📲`
 
-<img height="500" src="./simul/HeaderVIew_Collapsable_simul.gif">
+<img height="500" src="./simul/HeaderView_Collapsable_simul.gif">
 
 * [유뷰브 자료](https://www.youtube.com/watch?v=y7enrwW7C4E&t=768s)
 * [갓택오버플로우 자료](https://stackoverflow.com/questions/25263343/how-to-change-alpha-value-along-with-scrolling)

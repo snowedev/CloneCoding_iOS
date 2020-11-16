@@ -12,6 +12,7 @@
         <!--홈-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarrotMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
@@ -180,7 +181,7 @@
                                             <imageReference key="image" image="plus" symbolScale="large"/>
                                         </state>
                                         <connections>
-                                            <action selector="folatingAcitonBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRY-j6-2oR"/>
+                                            <action selector="folatingAcitonBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNc-dv-Mt8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -196,11 +197,11 @@
                             <constraint firstItem="8Rx-OM-4bm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="22g-XC-LEY"/>
                             <constraint firstItem="S5l-z0-V7d" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3hZ-Qr-hQ3"/>
                             <constraint firstItem="g3D-iW-0RB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="6ZI-Aq-d3f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gby-43-ejt" secondAttribute="bottom" constant="20" id="7gc-Ay-fiA"/>
                             <constraint firstItem="S5l-z0-V7d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="D6j-xi-vpm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gby-43-ejt" secondAttribute="trailing" constant="20" id="M2j-O6-zBD"/>
                             <constraint firstItem="g3D-iW-0RB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QC5-nw-xDe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gby-43-ejt" secondAttribute="trailing" constant="20" id="b6s-ov-DzE"/>
                             <constraint firstItem="S5l-z0-V7d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bnv-BC-Qvu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gby-43-ejt" secondAttribute="bottom" constant="20" id="dro-bH-KM7"/>
                             <constraint firstItem="8Rx-OM-4bm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="duU-p4-auS"/>
                             <constraint firstItem="8Rx-OM-4bm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gKS-3u-R2b"/>
                             <constraint firstItem="8Rx-OM-4bm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mGn-Lh-ZBx"/>
@@ -213,20 +214,19 @@
                     <navigationItem key="navigationItem" id="kjU-8v-6t9"/>
                     <connections>
                         <outlet property="SelectLoactionBtn" destination="FYe-pI-aWf" id="zHU-b0-FEH"/>
-                        <outlet property="advertisingButton" destination="cnE-vY-1lM" id="Aib-dF-E7U"/>
+                        <outlet property="advertisingButton" destination="cnE-vY-1lM" id="erc-wf-wVq"/>
                         <outlet property="categoryBtn" destination="GQP-TU-fTN" id="TjK-gU-PYM"/>
-                        <outlet property="floatingButton" destination="cu0-sw-UuD" id="dwv-Xj-YzD"/>
-                        <outlet property="floatingStackView" destination="gby-43-ejt" id="AfN-e3-cAF"/>
+                        <outlet property="floatingButton" destination="cu0-sw-UuD" id="yZI-sN-HF5"/>
+                        <outlet property="floatingStackView" destination="gby-43-ejt" id="wb5-Vl-y1A"/>
                         <outlet property="headerView" destination="g3D-iW-0RB" id="kSi-xR-Rqa"/>
                         <outlet property="headerViewHeightConstraint" destination="jQC-IR-GpS" id="2XG-Nu-eEj"/>
                         <outlet property="interfaceSegmented" destination="ho4-88-hCz" id="bch-hN-cfr"/>
                         <outlet property="neighborlifeContainer" destination="8Rx-OM-4bm" id="oga-gU-bTo"/>
-                        <outlet property="secondHandButton" destination="Xr6-mm-4gV" id="43c-en-qwr"/>
+                        <outlet property="secondHandButton" destination="Xr6-mm-4gV" id="6sp-yo-bLJ"/>
                         <outlet property="secondhandSellingContainer" destination="S5l-z0-V7d" id="e6p-ao-8Vs"/>
                         <outlet property="upperHeaderView" destination="eeb-mE-dtn" id="iAx-vq-ppZ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="88.392857142857139"/>
         </scene>
