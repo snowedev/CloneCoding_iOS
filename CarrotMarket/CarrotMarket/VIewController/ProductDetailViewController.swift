@@ -59,6 +59,7 @@ class ProductDetailViewController: UIViewController {
         self.navigationController?.navigationBar.topItem?.title = ""
         heartStatus = false
         naviStyle()
+        bottomViewStyle()
     }
     
     @IBAction func heartActionBtn(_ sender: Any) {
@@ -79,6 +80,14 @@ class ProductDetailViewController: UIViewController {
         self.navigationController?.navigationBar.standardAppearance = navigationAppearance
         self.navigationController?.navigationBar.topItem?.title = ""
         self.navigationController?.navigationBar.tintColor = .white
+    }
+    
+    func bottomViewStyle(){
+        veryBottomView.layer.shadowColor = UIColor.black.cgColor
+        veryBottomView.layer.shadowOffset = CGSize(width: 0, height: 4)
+        //veryBottomView.layer.shadowRadius = 4.0
+        veryBottomView.layer.shadowOpacity = 1
+        veryBottomView.layer.masksToBounds = false // 필수
     }
     
     func setProductInfo() {

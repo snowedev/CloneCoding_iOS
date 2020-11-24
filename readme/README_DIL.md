@@ -87,3 +87,8 @@
 `📲`
 
 <img height="300" src="./simul/HeaderView_Collapsable_simul.gif">
+
+## + 디테일 뷰 구현한 거 추가
+
+`상단 네비 바의 구현이 뭔가 이상하게 안돼서 방법을 알게되면 추가할 예정!`
+<img height="500" src="./simul/DetailView_simul.gif">
