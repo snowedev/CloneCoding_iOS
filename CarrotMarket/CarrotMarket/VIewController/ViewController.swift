@@ -8,32 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController, CustomSegmentedControlDelegate {
-    
-    // 세그먼트 인덱스에 따른 액션 활성화
-    func change(to index: Int) {
-        print("\(index)")
-        switch index {
-        case 0:
-            secondhandSellingContainer.alpha = 1.0
-            neighborlifeContainer.alpha = 0.0
-            categoryBtn.isHidden = false
-            floatingButton.isHidden = false
-            break
-        case 1:
-            secondhandSellingContainer.alpha = 0.0
-            neighborlifeContainer.alpha = 1.0
-            categoryBtn.isHidden = true
-            floatingButton.isHidden = true
-            break
-        default:
-            break
-        }
-    }
-    
+        
     let maxH: CGFloat = 150.0
     let minH: CGFloat = 100.0
     
-    // Outlet 선언부
+    //MARK: -Outlet
     //Upper Header view 내부 버튼
     @IBOutlet weak var categoryBtn: UIButton!
     @IBOutlet weak var SelectLoactionBtn: UIButton!
@@ -74,6 +53,7 @@ class ViewController: UIViewController, CustomSegmentedControlDelegate {
     @IBOutlet weak var advertisingButton: UIStackView!
     @IBOutlet weak var secondHandButton: UIStackView!
     
+    //MARK: -Floating Button
     // -lazy: 미리 만들어두지 않고 해당 객체가 필요하여 호출이 될 때 생성되도록함
     lazy var buttons: [UIStackView] = [self.advertisingButton, self.secondHandButton] // 띄울 버튼 목록
     var isShowingFloating: Bool = false // 플로팅 버튼 상태
@@ -142,6 +122,26 @@ class ViewController: UIViewController, CustomSegmentedControlDelegate {
         self.navigationController?.navigationBar.isHidden = true
     }
     
+    //MARK: -Segment
+    // 세그먼트 인덱스에 따른 액션 활성화
+    func change(to index: Int) {
+        switch index {
+        case 0:
+            secondhandSellingContainer.alpha = 1.0
+            neighborlifeContainer.alpha = 0.0
+            categoryBtn.isHidden = false
+            floatingButton.isHidden = false
+            break
+        case 1:
+            secondhandSellingContainer.alpha = 0.0
+            neighborlifeContainer.alpha = 1.0
+            categoryBtn.isHidden = true
+            floatingButton.isHidden = true
+            break
+        default:
+            break
+        }
+    }
     // 세그먼트 뷰에 값을 넘겨주기 위한 prepare 메서드
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SecondHandSelling",
@@ -154,6 +154,7 @@ class ViewController: UIViewController, CustomSegmentedControlDelegate {
         }
     }
     
+    //MARK: -Location Select Button
     // Upper Header View 지역 선택 부분 Action
     @IBAction func SelectLocationPopOver(_ sender: Any) {
         //get the button frame
