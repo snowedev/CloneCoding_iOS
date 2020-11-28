@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		548F69462570F435006B351E /* BigRectangleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F69452570F435006B351E /* BigRectangleCell.swift */; };
+		548F694C2570F496006B351E /* MiddleSquareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F694A2570F495006B351E /* MiddleSquareCell.swift */; };
+		548F694D2570F496006B351E /* MiddleSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548F694B2570F496006B351E /* MiddleSquareCell.xib */; };
 		5492EDBC256D69680032FB4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5492EDBB256D69680032FB4C /* AppDelegate.swift */; };
 		5492EDBE256D69680032FB4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5492EDBD256D69680032FB4C /* SceneDelegate.swift */; };
 		5492EDC0256D69680032FB4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5492EDBF256D69680032FB4C /* ViewController.swift */; };
 		5492EDC3256D69680032FB4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5492EDC1256D69680032FB4C /* Main.storyboard */; };
 		5492EDC5256D696A0032FB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5492EDC4256D696A0032FB4C /* Assets.xcassets */; };
 		5492EDC8256D696A0032FB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5492EDC6256D696A0032FB4C /* LaunchScreen.storyboard */; };
+		54C3E57925726B2C00E1D455 /* BigRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E57825726B2C00E1D455 /* BigRectangle.swift */; };
+		54C3E57E25726CE600E1D455 /* MiddleSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E57D25726CE600E1D455 /* MiddleSquare.swift */; };
+		54C3E581257272F000E1D455 /* BigRectangleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548F69422570F400006B351E /* BigRectangleCell.xib */; };
+		54C3E5862572A1A400E1D455 /* SmallRectangleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E5842572A1A400E1D455 /* SmallRectangleCell.swift */; };
+		54C3E5872572A1A400E1D455 /* SmallRectangleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C3E5852572A1A400E1D455 /* SmallRectangleCell.xib */; };
+		54C3E58B2572A23000E1D455 /* SmallRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E58A2572A23000E1D455 /* SmallRectangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		548F69422570F400006B351E /* BigRectangleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigRectangleCell.xib; sourceTree = "<group>"; };
+		548F69452570F435006B351E /* BigRectangleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRectangleCell.swift; sourceTree = "<group>"; };
+		548F694A2570F495006B351E /* MiddleSquareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MiddleSquareCell.swift; path = AppleMusic/Cells/MiddleSquareCell.swift; sourceTree = SOURCE_ROOT; };
+		548F694B2570F496006B351E /* MiddleSquareCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MiddleSquareCell.xib; path = AppleMusic/Cells/MiddleSquareCell.xib; sourceTree = SOURCE_ROOT; };
 		5492EDB8256D69680032FB4C /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5492EDBB256D69680032FB4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5492EDBD256D69680032FB4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,11 @@
 		5492EDC4256D696A0032FB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5492EDC7256D696A0032FB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5492EDC9256D696A0032FB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54C3E57825726B2C00E1D455 /* BigRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRectangle.swift; sourceTree = "<group>"; };
+		54C3E57D25726CE600E1D455 /* MiddleSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleSquare.swift; sourceTree = "<group>"; };
+		54C3E5842572A1A400E1D455 /* SmallRectangleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRectangleCell.swift; sourceTree = "<group>"; };
+		54C3E5852572A1A400E1D455 /* SmallRectangleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallRectangleCell.xib; sourceTree = "<group>"; };
+		54C3E58A2572A23000E1D455 /* SmallRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRectangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		548F69482570F43A006B351E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				548F69492570F44A006B351E /* xibs */,
+				548F69452570F435006B351E /* BigRectangleCell.swift */,
+				54C3E5842572A1A400E1D455 /* SmallRectangleCell.swift */,
+				548F694A2570F495006B351E /* MiddleSquareCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		548F69492570F44A006B351E /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				548F69422570F400006B351E /* BigRectangleCell.xib */,
+				548F694B2570F496006B351E /* MiddleSquareCell.xib */,
+				54C3E5852572A1A400E1D455 /* SmallRectangleCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
 		5492EDAF256D69680032FB4C = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +95,35 @@
 		5492EDBA256D69680032FB4C /* AppleMusic */ = {
 			isa = PBXGroup;
 			children = (
-				5492EDBB256D69680032FB4C /* AppDelegate.swift */,
-				5492EDBD256D69680032FB4C /* SceneDelegate.swift */,
+				54C3E57C25726C4600E1D455 /* Supporting File */,
+				54C3E57B25726B8D00E1D455 /* Source */,
+				548F69482570F43A006B351E /* Cells */,
 				5492EDBF256D69680032FB4C /* ViewController.swift */,
 				5492EDC1256D69680032FB4C /* Main.storyboard */,
-				5492EDC4256D696A0032FB4C /* Assets.xcassets */,
-				5492EDC6256D696A0032FB4C /* LaunchScreen.storyboard */,
 				5492EDC9256D696A0032FB4C /* Info.plist */,
 			);
 			path = AppleMusic;
+			sourceTree = "<group>";
+		};
+		54C3E57B25726B8D00E1D455 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				54C3E57825726B2C00E1D455 /* BigRectangle.swift */,
+				54C3E57D25726CE600E1D455 /* MiddleSquare.swift */,
+				54C3E58A2572A23000E1D455 /* SmallRectangle.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		54C3E57C25726C4600E1D455 /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				5492EDBB256D69680032FB4C /* AppDelegate.swift */,
+				5492EDBD256D69680032FB4C /* SceneDelegate.swift */,
+				5492EDC4256D696A0032FB4C /* Assets.xcassets */,
+				5492EDC6256D696A0032FB4C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +183,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548F694D2570F496006B351E /* MiddleSquareCell.xib in Resources */,
 				5492EDC8256D696A0032FB4C /* LaunchScreen.storyboard in Resources */,
 				5492EDC5256D696A0032FB4C /* Assets.xcassets in Resources */,
 				5492EDC3256D69680032FB4C /* Main.storyboard in Resources */,
+				54C3E581257272F000E1D455 /* BigRectangleCell.xib in Resources */,
+				54C3E5872572A1A400E1D455 /* SmallRectangleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548F69462570F435006B351E /* BigRectangleCell.swift in Sources */,
+				54C3E5862572A1A400E1D455 /* SmallRectangleCell.swift in Sources */,
+				54C3E57E25726CE600E1D455 /* MiddleSquare.swift in Sources */,
 				5492EDC0256D69680032FB4C /* ViewController.swift in Sources */,
 				5492EDBC256D69680032FB4C /* AppDelegate.swift in Sources */,
+				548F694C2570F496006B351E /* MiddleSquareCell.swift in Sources */,
+				54C3E58B2572A23000E1D455 /* SmallRectangle.swift in Sources */,
+				54C3E57925726B2C00E1D455 /* BigRectangle.swift in Sources */,
 				5492EDBE256D69680032FB4C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
