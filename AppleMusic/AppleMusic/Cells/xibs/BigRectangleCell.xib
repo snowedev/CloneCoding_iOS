@@ -39,7 +39,7 @@
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superbloom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brC-OK-4Ij">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superbloom" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brC-OK-4Ij">
                                         <rect key="frame" x="0.0" y="15" width="92" height="20.5"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -60,7 +60,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
@@ -70,6 +70,7 @@
                             <constraint firstAttribute="trailing" secondItem="dJU-n6-P4t" secondAttribute="trailing" id="0aM-gV-8zw"/>
                             <constraint firstItem="9xH-Gg-i83" firstAttribute="leading" secondItem="yOI-hu-Ik5" secondAttribute="leading" id="4Yb-WR-35t"/>
                             <constraint firstItem="9xH-Gg-i83" firstAttribute="top" secondItem="dJU-n6-P4t" secondAttribute="bottom" constant="5" id="7AX-2b-glp"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9xH-Gg-i83" secondAttribute="trailing" id="BLF-g6-aXF"/>
                             <constraint firstItem="N74-gL-Hen" firstAttribute="top" secondItem="9xH-Gg-i83" secondAttribute="bottom" constant="5" id="BO2-0W-gDv"/>
                             <constraint firstItem="dJU-n6-P4t" firstAttribute="top" secondItem="yOI-hu-Ik5" secondAttribute="top" id="RF7-qY-MDl"/>
                             <constraint firstItem="dJU-n6-P4t" firstAttribute="leading" secondItem="yOI-hu-Ik5" secondAttribute="leading" id="Tjo-1n-yzD"/>
@@ -89,6 +90,7 @@
             <connections>
                 <outlet property="albumImageView" destination="N74-gL-Hen" id="vOb-rC-ZkD"/>
                 <outlet property="categoryLabel" destination="Nwx-Wd-mAB" id="eXq-fQ-gRd"/>
+                <outlet property="greyLine" destination="dJU-n6-P4t" id="F3m-Wd-Hx0"/>
                 <outlet property="musicTitleLabel" destination="brC-OK-4Ij" id="EdN-Um-CdN"/>
                 <outlet property="singerLabel" destination="WDu-f7-hoZ" id="aKZ-Zh-eaV"/>
             </connections>

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--둘러보기-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppleMusic" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="2500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keR-uH-2za">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="2070"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="2090"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exh-GA-0pK">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
@@ -30,12 +30,12 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="둘러보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1K-m4-hGM">
                                                         <rect key="frame" x="20" y="91" width="69.333333333333329" height="24"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLo-V6-XvN">
                                                         <rect key="frame" x="20" y="11" width="350" height="60"/>
-                                                        <color key="backgroundColor" red="0.77134380918560608" green="0.16873694943941331" blue="0.064240859381973076" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.86850461092862219" green="0.23683934993696201" blue="0.18605663870988287" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="lgj-Qi-qCu"/>
                                                         </constraints>
@@ -93,16 +93,16 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="믿고 들으세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiM-Hm-ryE">
-                                                        <rect key="frame" x="20" y="21" width="93" height="30"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="19.999999999999993" y="21" width="109.33333333333331" height="30"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJf-fM-6nH">
                                                         <rect key="frame" x="314" y="21" width="56" height="30"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                                         <state key="normal" title="전체 보기">
-                                                            <color key="titleColor" red="1" green="0.096053480550000001" blue="0.053351794449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="0.86260007607816447" green="0.18640565944273096" blue="0.082230918821928886" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                     </button>
                                                 </subviews>
@@ -154,16 +154,16 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="무드별 음악" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKS-D9-VV4">
-                                                        <rect key="frame" x="20" y="21" width="78" height="30"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="20" y="21" width="92" height="30"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqy-9R-vKr">
                                                         <rect key="frame" x="314" y="21" width="56" height="30"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                                         <state key="normal" title="전체 보기">
-                                                            <color key="titleColor" red="1" green="0.096053480550000001" blue="0.053351794449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="0.86260007607816447" green="0.18640565944273096" blue="0.082230918821928886" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                     </button>
                                                 </subviews>
@@ -215,16 +215,16 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주말 200% 즐기기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAE-yA-8ew">
-                                                        <rect key="frame" x="20" y="21" width="128.66666666666666" height="30"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="20" y="21" width="151.33333333333334" height="30"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIc-Yf-6f4">
                                                         <rect key="frame" x="314" y="21" width="56" height="30"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                                         <state key="normal" title="전체 보기">
-                                                            <color key="titleColor" red="1" green="0.096053480550000001" blue="0.053351794449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="0.86260007607816447" green="0.18640565944273096" blue="0.082230918821928886" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                     </button>
                                                 </subviews>
@@ -276,16 +276,16 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기 트랙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMe-xh-yJy">
-                                                        <rect key="frame" x="20.000000000000004" y="21" width="63.333333333333343" height="30"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="20" y="21" width="74.666666666666671" height="30"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6y-1V-nTv">
                                                         <rect key="frame" x="314" y="21" width="56" height="30"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                                         <state key="normal" title="전체 보기">
-                                                            <color key="titleColor" red="1" green="0.096053480550000001" blue="0.053351794449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="0.86260007607816447" green="0.18640565944273096" blue="0.082230918821928886" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                     </button>
                                                 </subviews>
@@ -300,21 +300,21 @@
                                                     <constraint firstItem="R6y-1V-nTv" firstAttribute="centerY" secondItem="lMe-xh-yJy" secondAttribute="centerY" id="xKZ-Qu-Q0M"/>
                                                 </constraints>
                                             </view>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tFy-Sr-xJ2">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tFy-Sr-xJ2">
                                                 <rect key="frame" x="0.0" y="1260" width="390" height="260"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="260" id="7oW-qd-j9n"/>
                                                 </constraints>
-                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NlB-jw-uc4">
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NlB-jw-uc4">
                                                     <size key="itemSize" width="128" height="128"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yGe-vW-uzF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TableShapeCell" id="yGe-vW-uzF" customClass="TableShapeCell" customModule="AppleMusic" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="66" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lrg-ug-6Y0">
                                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -337,16 +337,16 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 최신곡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXJ-29-wgv">
-                                                        <rect key="frame" x="19.999999999999996" y="21" width="48.666666666666657" height="30"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <rect key="frame" x="20.000000000000004" y="21" width="57.333333333333343" height="30"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4T-uq-UFM">
                                                         <rect key="frame" x="314" y="21" width="56" height="30"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                                         <state key="normal" title="전체 보기">
-                                                            <color key="titleColor" red="1" green="0.096053480550000001" blue="0.053351794449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="0.86260007607816447" green="0.18640565944273096" blue="0.082230918821928886" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                     </button>
                                                 </subviews>
@@ -361,11 +361,11 @@
                                                     <constraint firstItem="mQ2-Xi-6ed" firstAttribute="trailing" secondItem="p4T-uq-UFM" secondAttribute="trailing" id="Z2p-MJ-lqz"/>
                                                 </constraints>
                                             </view>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A9j-TW-XUT">
-                                                <rect key="frame" x="0.0" y="1580" width="390" height="480"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A9j-TW-XUT">
+                                                <rect key="frame" x="0.0" y="1580" width="390" height="500"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="480" id="IXb-L9-tCL"/>
+                                                    <constraint firstAttribute="height" constant="500" id="IXb-L9-tCL"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qme-Ne-Wh0">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -456,14 +456,17 @@
                             <constraint firstAttribute="bottom" secondItem="gsS-CF-zQf" secondAttribute="bottom" id="hF1-Y6-k2o"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="둘러보기" image="square.grid.2x2.fill" id="Lgl-gM-gww">
-                        <imageReference key="selectedImage" image="square.grid.2x2.fill" catalog="system" symbolScale="large"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="jDj-yg-RL5"/>
                     <size key="freeformSize" width="390" height="2500"/>
                     <connections>
                         <outlet property="fifthCollectionView" destination="tFy-Sr-xJ2" id="DeJ-3h-w4d"/>
                         <outlet property="firstCollectionView" destination="PNT-71-6VT" id="cxp-hm-xfa"/>
                         <outlet property="fourthCollectionView" destination="ouG-S6-vwD" id="TTh-Fo-BUk"/>
+                        <outlet property="greyLine1" destination="kRB-ze-4On" id="fGn-Yq-5HY"/>
+                        <outlet property="greyLine2" destination="OXB-mv-Uby" id="vms-MR-HzG"/>
+                        <outlet property="greyLine3" destination="X0J-LX-8t7" id="2A4-s3-3vD"/>
+                        <outlet property="greyLine4" destination="FLg-3o-TXE" id="6yQ-uK-B2z"/>
+                        <outlet property="greyLine5" destination="mQ2-Xi-6ed" id="kvH-hf-3xQ"/>
                         <outlet property="secondCollectionView" destination="IyS-GC-j2G" id="COF-uC-qIg"/>
                         <outlet property="sixthCollectionView" destination="A9j-TW-XUT" id="R2h-Wn-5Ut"/>
                         <outlet property="thirdCollectionView" destination="m2S-zF-zL6" id="zGv-5G-txn"/>
@@ -473,7 +476,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="963.07692307692309" y="88.862559241706151"/>
+            <point key="canvasLocation" x="1892.3076923076922" y="88.862559241706151"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="C3R-O8-hwc">
@@ -486,12 +489,33 @@
                         <color key="selectedImageTintColor" red="0.77134380920000001" green="0.1687369494" blue="0.064240859380000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1ax-O6-DU7"/>
+                        <segue destination="2Ae-Tq-F2l" kind="relationship" relationship="viewControllers" id="1ax-O6-DU7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmx-h8-3hu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35.384615384615387" y="88.862559241706151"/>
+        </scene>
+        <!--둘러보기-->
+        <scene sceneID="cYm-De-rC5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Ae-Tq-F2l" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="둘러보기" image="square.grid.2x2.fill" id="Lgl-gM-gww">
+                        <imageReference key="selectedImage" image="square.grid.2x2.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eU6-BB-V8e">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fxJ-Z5-LtP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F69-jm-dD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.07692307692309" y="88.862559241706151"/>
         </scene>
     </scenes>
     <resources>

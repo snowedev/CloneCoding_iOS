@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct TableShape {
+    let imageName : String
+    let songLabelName: String
+    let singerLabelName: String
+}

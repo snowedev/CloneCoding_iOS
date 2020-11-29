@@ -18,6 +18,7 @@ class MiddleSquareCell: UICollectionViewCell {
         self.albumImageView.image = UIImage(named: ImageName)
         self.firstLabel.text = firstLabel
         self.secondLabel.text = secondLabel
+        self.secondLabel.textColor = .brownGrey
     }
     
     static func nib() -> UINib {
