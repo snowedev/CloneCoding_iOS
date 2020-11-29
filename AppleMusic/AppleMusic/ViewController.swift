@@ -13,11 +13,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var firstCollectionView: UICollectionView!
     @IBOutlet weak var secondCollectionView: UICollectionView!
     @IBOutlet weak var thirdCollectionView: UICollectionView!
+    @IBOutlet weak var fourthCollectionView: UICollectionView!
+    @IBOutlet weak var fifthCollectionView: UICollectionView!
+    @IBOutlet weak var sixthCollectionView: UICollectionView!
     @IBOutlet weak var trialButton: UIButton!
     
     var firstData : [BigRectangle] = []
-    var secondeData : [MiddleSquare] = []
+    var secondData : [MiddleSquare] = []
     var thirdData : [SmallRectangle] = []
+    var fourthData : [MiddleSquare] = []
+    var fifthData : [MiddleSquare] = []
+    var sixthData : [MiddleSquare] = []
     
     var minItemSpacing: CGFloat = 10
     var previousIndex = 0
@@ -43,6 +49,23 @@ class ViewController: UIViewController {
         thirdCollectionView.register(SmallRectangleCell.nib(), forCellWithReuseIdentifier: SmallRectangleCell.identifier)
         thirdCollectionView.delegate = self
         thirdCollectionView.dataSource = self
+        
+        setFourthData()
+        fourthCollectionView.register(MiddleSquareCell.nib(), forCellWithReuseIdentifier: MiddleSquareCell.identifier)
+        fourthCollectionView.delegate = self
+        fourthCollectionView.dataSource = self
+        
+//        setFifthData()
+//        fifthCollectionView.register(MiddleSquareCell.nib(), forCellWithReuseIdentifier: MiddleSquareCell.identifier)
+//        fifthCollectionView.delegate = self
+//        fifthCollectionView.dataSource = self
+        
+        setSixthData()
+        sixthCollectionView.register(MiddleSquareCell.nib(), forCellWithReuseIdentifier: MiddleSquareCell.identifier)
+        sixthCollectionView.contentInsetAdjustmentBehavior = .never
+        sixthCollectionView.decelerationRate = .fast
+        sixthCollectionView.delegate = self
+        sixthCollectionView.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -94,7 +117,7 @@ class ViewController: UIViewController {
     }
     
     func setSecondData() {
-        secondeData.append(contentsOf: [
+        secondData.append(contentsOf: [
             MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
             MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
             MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
@@ -114,6 +137,33 @@ class ViewController: UIViewController {
             SmallRectangle(imageName: "healing", firstLabelName: "행복"),
         ])
     }
+    
+    func setFourthData() {
+        fourthData.append(contentsOf: [
+            MiddleSquare(albumArtName: "enjoy1", firstLabelName: "퓨어 히트곡", secondLabelName: "Apple Music 팝"),
+            MiddleSquare(albumArtName: "enjoy1", firstLabelName: "퓨어 히트곡", secondLabelName: "Apple Music 팝"),
+            MiddleSquare(albumArtName: "enjoy1", firstLabelName: "퓨어 히트곡", secondLabelName: "Apple Music 팝"),
+            MiddleSquare(albumArtName: "enjoy1", firstLabelName: "퓨어 히트곡", secondLabelName: "Apple Music 팝"),
+            MiddleSquare(albumArtName: "enjoy1", firstLabelName: "퓨어 히트곡", secondLabelName: "Apple Music 팝"),
+            MiddleSquare(albumArtName: "enjoy1", firstLabelName: "퓨어 히트곡", secondLabelName: "Apple Music 팝"),
+        ])
+    }
+    
+    func setSixthData() {
+        sixthData.append(contentsOf: [
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+            MiddleSquare(albumArtName: "albumart1", firstLabelName: "Rap Life", secondLabelName: "Apple Music 힙합/웹"),
+        ])
+    }
 }
 
 extension ViewController: UICollectionViewDelegate{
@@ -125,9 +175,13 @@ extension ViewController: UICollectionViewDataSource{
         if collectionView == self.firstCollectionView {
             return firstData.count
         }else if collectionView == self.secondCollectionView {
-            return secondeData.count
+            return secondData.count
         }else if collectionView == self.thirdCollectionView{
             return thirdData.count
+        }else if collectionView == self.fourthCollectionView {
+            return fourthData.count
+        }else if collectionView == self.sixthCollectionView {
+            return sixthData.count
         }else{
             return 0
         }
@@ -147,7 +201,7 @@ extension ViewController: UICollectionViewDataSource{
                 return UICollectionViewCell()
             }
             
-            cell.setMiddleSquareData(ImageName: secondeData[indexPath.row].albumArtName, firstLabel: secondeData[indexPath.row].firstLabelName, secondLabel: secondeData[indexPath.row].secondLabelName)
+            cell.setMiddleSquareData(ImageName: secondData[indexPath.row].albumArtName, firstLabel: secondData[indexPath.row].firstLabelName, secondLabel: secondData[indexPath.row].secondLabelName)
             
             return cell
             
@@ -157,6 +211,24 @@ extension ViewController: UICollectionViewDataSource{
             }
             
             cell.setSmallRectangleData(imageName: thirdData[indexPath.row].imageName, firstLabelName: thirdData[indexPath.row].firstLabelName)
+            
+            return cell
+            
+        }else if collectionView == self.fourthCollectionView {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MiddleSquareCell.identifier, for: indexPath) as? MiddleSquareCell else {
+                return UICollectionViewCell()
+            }
+            
+            cell.setMiddleSquareData(ImageName: fourthData[indexPath.row].albumArtName, firstLabel: fourthData[indexPath.row].firstLabelName, secondLabel: fourthData[indexPath.row].secondLabelName)
+            
+            return cell
+            
+        }else if collectionView == self.sixthCollectionView {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MiddleSquareCell.identifier, for: indexPath) as? MiddleSquareCell else {
+                return UICollectionViewCell()
+            }
+            
+            cell.setMiddleSquareData(ImageName: sixthData[indexPath.row].albumArtName, firstLabel: sixthData[indexPath.row].firstLabelName, secondLabel: sixthData[indexPath.row].secondLabelName)
             
             return cell
             
@@ -180,6 +252,10 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
             return CGSize(width: (collectionView.frame.width-40)/2, height: collectionView.frame.height)
         }else if collectionView == self.thirdCollectionView {
             return CGSize(width: (collectionView.frame.width-40)/2, height: collectionView.frame.height)
+        }else if collectionView == self.fourthCollectionView {
+            return CGSize(width: (collectionView.frame.width-40)/2, height: collectionView.frame.height)
+        }else if collectionView == self.sixthCollectionView {
+            return CGSize(width: (collectionView.frame.width-50)/2, height: (collectionView.frame.height-20)/2)
         }else{
             return CGSize(width: 0, height: 0)
         }
@@ -194,6 +270,10 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
         }else if collectionView == self.secondCollectionView {
             return 10
         }else if collectionView == self.thirdCollectionView {
+            return 10
+        }else if collectionView == self.fourthCollectionView {
+            return 10
+        }else if collectionView == self.sixthCollectionView {
             return 10
         }else{
             return 0
@@ -210,6 +290,10 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
             return UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20)
         }else if collectionView == self.thirdCollectionView {
             return UIEdgeInsets(top: 5, left: 20, bottom: 0, right: 20)
+        }else if collectionView == self.fourthCollectionView {
+            return UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20)
+        }else if collectionView == self.sixthCollectionView {
+            return UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20)
         }else{
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
@@ -220,6 +304,15 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
     {
         if scrollView == self.firstCollectionView {
+            let cellWidthIncludeSpacing = (self.firstCollectionView.frame.width)-40 + minItemSpacing
+            var offset = targetContentOffset.pointee
+            let index = (offset.x + scrollView.contentInset.left) / cellWidthIncludeSpacing
+            let roundedIndex: CGFloat = round(index)
+            
+            offset = CGPoint(x: roundedIndex * cellWidthIncludeSpacing, y: scrollView.contentInset.top)
+            targetContentOffset.pointee = offset
+            
+        }else if scrollView == self.sixthCollectionView {
             let cellWidthIncludeSpacing = (self.firstCollectionView.frame.width)-40 + minItemSpacing
             var offset = targetContentOffset.pointee
             let index = (offset.x + scrollView.contentInset.left) / cellWidthIncludeSpacing

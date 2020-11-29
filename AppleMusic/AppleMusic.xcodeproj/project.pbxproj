@@ -22,6 +22,9 @@
 		54C3E5862572A1A400E1D455 /* SmallRectangleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E5842572A1A400E1D455 /* SmallRectangleCell.swift */; };
 		54C3E5872572A1A400E1D455 /* SmallRectangleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C3E5852572A1A400E1D455 /* SmallRectangleCell.xib */; };
 		54C3E58B2572A23000E1D455 /* SmallRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E58A2572A23000E1D455 /* SmallRectangle.swift */; };
+		54C3E58F2573665000E1D455 /* TableShapeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E58D2573665000E1D455 /* TableShapeCell.swift */; };
+		54C3E5902573665000E1D455 /* TableShapeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C3E58E2573665000E1D455 /* TableShapeCell.xib */; };
+		54C3E5942573673100E1D455 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E5932573673100E1D455 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		54C3E5842572A1A400E1D455 /* SmallRectangleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRectangleCell.swift; sourceTree = "<group>"; };
 		54C3E5852572A1A400E1D455 /* SmallRectangleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallRectangleCell.xib; sourceTree = "<group>"; };
 		54C3E58A2572A23000E1D455 /* SmallRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRectangle.swift; sourceTree = "<group>"; };
+		54C3E58D2573665000E1D455 /* TableShapeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableShapeCell.swift; sourceTree = "<group>"; };
+		54C3E58E2573665000E1D455 /* TableShapeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableShapeCell.xib; sourceTree = "<group>"; };
+		54C3E5932573673100E1D455 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = AppleMusic/Cells/TableViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 			children = (
 				548F69492570F44A006B351E /* xibs */,
 				548F69452570F435006B351E /* BigRectangleCell.swift */,
+				54C3E5932573673100E1D455 /* TableViewCell.swift */,
+				54C3E58D2573665000E1D455 /* TableShapeCell.swift */,
 				54C3E5842572A1A400E1D455 /* SmallRectangleCell.swift */,
 				548F694A2570F495006B351E /* MiddleSquareCell.swift */,
 			);
@@ -72,6 +80,7 @@
 				548F69422570F400006B351E /* BigRectangleCell.xib */,
 				548F694B2570F496006B351E /* MiddleSquareCell.xib */,
 				54C3E5852572A1A400E1D455 /* SmallRectangleCell.xib */,
+				54C3E58E2573665000E1D455 /* TableShapeCell.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 				5492EDC5256D696A0032FB4C /* Assets.xcassets in Resources */,
 				5492EDC3256D69680032FB4C /* Main.storyboard in Resources */,
 				54C3E581257272F000E1D455 /* BigRectangleCell.xib in Resources */,
+				54C3E5902573665000E1D455 /* TableShapeCell.xib in Resources */,
 				54C3E5872572A1A400E1D455 /* SmallRectangleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,8 +215,10 @@
 				5492EDC0256D69680032FB4C /* ViewController.swift in Sources */,
 				5492EDBC256D69680032FB4C /* AppDelegate.swift in Sources */,
 				548F694C2570F496006B351E /* MiddleSquareCell.swift in Sources */,
+				54C3E5942573673100E1D455 /* TableViewCell.swift in Sources */,
 				54C3E58B2572A23000E1D455 /* SmallRectangle.swift in Sources */,
 				54C3E57925726B2C00E1D455 /* BigRectangle.swift in Sources */,
+				54C3E58F2573665000E1D455 /* TableShapeCell.swift in Sources */,
 				5492EDBE256D69680032FB4C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
