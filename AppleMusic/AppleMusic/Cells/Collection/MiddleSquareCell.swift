@@ -21,6 +21,12 @@ class MiddleSquareCell: UICollectionViewCell {
         self.secondLabel.textColor = .brownGrey
     }
     
+    func setCell(middlesquare: MiddleSquare){
+        albumImageView.image = UIImage(named: middlesquare.albumArtName)
+        firstLabel.text = middlesquare.firstLabelName
+        secondLabel.text = middlesquare.secondLabelName
+    }
+    
     static func nib() -> UINib {
         return UINib(nibName: "MiddleSquareCell", bundle: nil)
     }

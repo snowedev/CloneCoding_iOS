@@ -25,6 +25,18 @@ class BigRectangleCell: UICollectionViewCell {
         self.singerLabel.textColor = .brownGrey
     }
     
+    func setCell(explore: BigRectangle){
+        albumImageView.image = UIImage(named: explore.bannerName)
+        
+        categoryLabel.text = explore.categoryName
+        categoryLabel.textColor = .brownGrey
+        
+        musicTitleLabel.text = explore.musicName
+        
+        singerLabel.text = explore.singerName
+        self.singerLabel.textColor = .brownGrey
+    }
+    
     static func nib() -> UINib {
         return UINib(nibName: "BigRectangleCell", bundle: nil)
     }

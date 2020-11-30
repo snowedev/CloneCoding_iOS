@@ -8,9 +8,20 @@
 import UIKit
 
 class NewSongTableViewCell: UITableViewCell {
-
+    static let identifier = "NewSongTableViewCell"
+    
+    @IBOutlet weak var newSongCollectionView: UICollectionView!
+    var newsong : [MiddleSquare] = []
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "NewSongTableViewCell", bundle: nil)
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        self.newSongCollectionView.register(MiddleSquareCell.nib(), forCellWithReuseIdentifier: MiddleSquareCell.identifier)
+        self.newSongCollectionView.delegate = self
+        self.newSongCollectionView.dataSource = self
         // Initialization code
     }
 
@@ -20,4 +31,64 @@ class NewSongTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+}
+
+extension NewSongTableViewCell: UICollectionViewDelegate{
+}
+extension NewSongTableViewCell: UICollectionViewDataSource{
+    
+    func updateCellWith(row: [MiddleSquare]) {
+        self.newsong = row
+        self.newSongCollectionView.reloadData()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return newsong.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MiddleSquareCell.identifier, for: indexPath) as? MiddleSquareCell else{
+            return UICollectionViewCell()
+        }
+        
+        cell.setCell(middlesquare: newsong[indexPath.row])
+        return cell
+    }
+    
+}
+
+extension NewSongTableViewCell: UICollectionViewDelegateFlowLayout{
+    
+    //MARK: - Cell 사이즈
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+    {
+        if collectionView == self.newSongCollectionView {
+            return CGSize(width: (collectionView.frame.width-40)/2, height: collectionView.frame.height)
+        }else{
+            return CGSize(width: 0, height: 0)
+        }
+        
+    }
+    
+    //MARK: - Cell간의 좌우간격 지정
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
+    {
+        
+        if collectionView == self.newSongCollectionView {
+            return 10
+        }else{
+            return 0
+        }
+    }
+
+    //MARK: - 마진
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
+    {
+        if collectionView == self.newSongCollectionView{
+            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        }else{
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        }
+
+    }
 }

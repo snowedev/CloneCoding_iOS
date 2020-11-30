@@ -59,6 +59,7 @@ extension SecondHandSellingVC: UITableViewDelegate {
     
     // 스크롤에 따라 최 상단 헤더뷰 Collapsable하게
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("\(scrollView.contentOffset.y)")
         if scrollView.contentOffset.y < 0 {
             headerHeight?.constant = max(abs(scrollView.contentOffset.y), minHeight)
         }
