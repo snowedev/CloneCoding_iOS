@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var sixthCollectionView: UICollectionView!
     @IBOutlet weak var trialButton: UIButton!
     
-    @IBOutlet weak var topHeaderView: UIView!
-    
     @IBOutlet weak var greyLine1: UILabel!
     @IBOutlet weak var greyLine2: UILabel!
     @IBOutlet weak var greyLine3: UILabel!
@@ -216,7 +214,8 @@ extension ViewController: UICollectionViewDelegate{
     
 }
 
-extension ViewController: UICollectionViewDataSource{
+extension ViewController: UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.firstCollectionView {
             return firstData.count
@@ -340,15 +339,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
             return 0
         }
     }
-    
-//    //MARK: - Cell간의 위아래 간격지정
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
-//        {
-//            if collectionView == self.fifthCollectionView {
-//            return 0
-//            }
-//        }
-    
+ 
     //MARK: - 마진
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
     {

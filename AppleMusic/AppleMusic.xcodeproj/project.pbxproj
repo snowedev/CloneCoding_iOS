@@ -26,6 +26,7 @@
 		54C3E5902573665000E1D455 /* TableShapeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C3E58E2573665000E1D455 /* TableShapeCell.xib */; };
 		54C3E59D2573977B00E1D455 /* TableShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E59C2573977B00E1D455 /* TableShape.swift */; };
 		54C3E5A125739FF200E1D455 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E5A025739FF200E1D455 /* UIColor+Extension.swift */; };
+		54C3E5A52573F5C900E1D455 /* FirstData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E5A42573F5C900E1D455 /* FirstData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		54C3E58E2573665000E1D455 /* TableShapeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableShapeCell.xib; sourceTree = "<group>"; };
 		54C3E59C2573977B00E1D455 /* TableShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableShape.swift; sourceTree = "<group>"; };
 		54C3E5A025739FF200E1D455 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		54C3E5A42573F5C900E1D455 /* FirstData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		54C3E57C25726C4600E1D455 /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
+				54C3E5A32573F5AB00E1D455 /* FakeData */,
 				54C3E59F25739FD200E1D455 /* Extension */,
 				5492EDBB256D69680032FB4C /* AppDelegate.swift */,
 				5492EDBD256D69680032FB4C /* SceneDelegate.swift */,
@@ -144,6 +147,14 @@
 				54C3E5A025739FF200E1D455 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		54C3E5A32573F5AB00E1D455 /* FakeData */ = {
+			isa = PBXGroup;
+			children = (
+				54C3E5A42573F5C900E1D455 /* FirstData.swift */,
+			);
+			path = FakeData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 			files = (
 				548F69462570F435006B351E /* BigRectangleCell.swift in Sources */,
 				54C3E5862572A1A400E1D455 /* SmallRectangleCell.swift in Sources */,
+				54C3E5A52573F5C900E1D455 /* FirstData.swift in Sources */,
 				54C3E57E25726CE600E1D455 /* MiddleSquare.swift in Sources */,
 				54C3E5A125739FF200E1D455 /* UIColor+Extension.swift in Sources */,
 				5492EDC0256D69680032FB4C /* ViewController.swift in Sources */,
