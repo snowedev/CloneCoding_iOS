@@ -19,6 +19,12 @@ class SmallRectangleCell: UICollectionViewCell {
         
     }
     
+    func setCell(smallrectangle: SmallRectangle){
+        imageView.image = UIImage(named: smallrectangle.imageName)
+        firstLabel.text = smallrectangle.firstLabelName
+        
+    }
+    
     static func nib() -> UINib {
         return UINib(nibName: "SmallRectangleCell", bundle: nil)
     }

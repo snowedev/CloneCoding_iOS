@@ -8,7 +8,6 @@
 import Foundation
 
 struct FirstData {
-    
     var objectsArray = [
         BigRectangle(bannerName: "apmBan1", categoryName: "기념", musicName: "연말연시에 꼭 맞는 음악", singerName: "가수 이름"),
         BigRectangle(bannerName: "apmBan2", categoryName: "최신 앨범 + 인터뷰", musicName: "Plastic Hearts", singerName: "Miley Cyrus"),

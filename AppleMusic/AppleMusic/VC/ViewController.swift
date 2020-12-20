@@ -186,7 +186,6 @@ class ViewController: UIViewController {
             TableShape(imageName: "smallAlbumArt7", songLabelName: "Life Goes On", singerLabelName: "방탄소년단"),
             TableShape(imageName: "smallAlbumArt8", songLabelName: "Prisoner (feat. Dua Lipa)", singerLabelName: "Miley Cyrus"),
             TableShape(imageName: "smallAlbumArt9", songLabelName: "Lil Time (feat. AUDREY NUNA)", singerLabelName: "헤일"),
-            
             TableShape(imageName: "smallAlbumArt10", songLabelName: "Monster", singerLabelName: "Shawn Mendes & Justin Bieber"),
             TableShape(imageName: "smallAlbumArt11", songLabelName: "꽃집 (feat. SUMIN)", singerLabelName: "그리즐리"),
             TableShape(imageName: "smallAlbumArt12", songLabelName: "2easy (feat. 헤이즈)", singerLabelName: "Nlve"),

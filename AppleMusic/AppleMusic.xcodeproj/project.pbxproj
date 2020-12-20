@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5475918D258DE69E008E865C /* ThirdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475918C258DE69E008E865C /* ThirdData.swift */; };
+		54759190258DE6D4008E865C /* FourthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475918F258DE6D4008E865C /* FourthData.swift */; };
+		54759193258DE72C008E865C /* FifthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54759192258DE72C008E865C /* FifthData.swift */; };
+		54759196258DE764008E865C /* SixthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54759195258DE764008E865C /* SixthData.swift */; };
+		5475919E258DFF61008E865C /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475919C258DFF61008E865C /* MoodTableViewCell.swift */; };
+		5475919F258DFF61008E865C /* MoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5475919D258DFF61008E865C /* MoodTableViewCell.xib */; };
 		548F69462570F435006B351E /* BigRectangleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F69452570F435006B351E /* BigRectangleCell.swift */; };
 		548F694C2570F496006B351E /* MiddleSquareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F694A2570F495006B351E /* MiddleSquareCell.swift */; };
 		548F694D2570F496006B351E /* MiddleSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548F694B2570F496006B351E /* MiddleSquareCell.xib */; };
@@ -37,6 +43,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5475918C258DE69E008E865C /* ThirdData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdData.swift; sourceTree = "<group>"; };
+		5475918F258DE6D4008E865C /* FourthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthData.swift; sourceTree = "<group>"; };
+		54759192258DE72C008E865C /* FifthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthData.swift; sourceTree = "<group>"; };
+		54759195258DE764008E865C /* SixthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthData.swift; sourceTree = "<group>"; };
+		5475919C258DFF61008E865C /* MoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
+		5475919D258DFF61008E865C /* MoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoodTableViewCell.xib; sourceTree = "<group>"; };
 		548F69422570F400006B351E /* BigRectangleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigRectangleCell.xib; sourceTree = "<group>"; };
 		548F69452570F435006B351E /* BigRectangleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRectangleCell.swift; sourceTree = "<group>"; };
 		548F694A2570F495006B351E /* MiddleSquareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MiddleSquareCell.swift; path = AppleMusic/Cells/Collection/MiddleSquareCell.swift; sourceTree = SOURCE_ROOT; };
@@ -117,9 +129,9 @@
 		5492EDBA256D69680032FB4C /* AppleMusic */ = {
 			isa = PBXGroup;
 			children = (
+				54C3E57C25726C4600E1D455 /* Supporting File */,
 				5494993B25750E4200DC1078 /* Storyboards */,
 				5494993A25750E3500DC1078 /* VC */,
-				54C3E57C25726C4600E1D455 /* Supporting File */,
 				54C3E5A32573F5AB00E1D455 /* FakeData */,
 				54C3E57B25726B8D00E1D455 /* Source */,
 				548F69482570F43A006B351E /* Cells */,
@@ -162,6 +174,7 @@
 			children = (
 				5494994D25751A8900DC1078 /* NewSongTableViewCell.xib */,
 				5494993E25750F7300DC1078 /* ExploreTableViewCell.xib */,
+				5475919D258DFF61008E865C /* MoodTableViewCell.xib */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -182,6 +195,7 @@
 			children = (
 				5494993D25750F7300DC1078 /* ExploreTableViewCell.swift */,
 				5494994C25751A8900DC1078 /* NewSongTableViewCell.swift */,
+				5475919C258DFF61008E865C /* MoodTableViewCell.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -222,6 +236,10 @@
 			children = (
 				54C3E5A42573F5C900E1D455 /* FirstData.swift */,
 				5494995225751D6100DC1078 /* SecondData.swift */,
+				5475918C258DE69E008E865C /* ThirdData.swift */,
+				5475918F258DE6D4008E865C /* FourthData.swift */,
+				54759192258DE72C008E865C /* FifthData.swift */,
+				54759195258DE764008E865C /* SixthData.swift */,
 			);
 			path = FakeData;
 			sourceTree = "<group>";
@@ -289,6 +307,7 @@
 				5492EDC5256D696A0032FB4C /* Assets.xcassets in Resources */,
 				5494994025750F7300DC1078 /* ExploreTableViewCell.xib in Resources */,
 				5492EDC3256D69680032FB4C /* Main.storyboard in Resources */,
+				5475919F258DFF61008E865C /* MoodTableViewCell.xib in Resources */,
 				54C3E581257272F000E1D455 /* BigRectangleCell.xib in Resources */,
 				54C3E5902573665000E1D455 /* TableShapeCell.xib in Resources */,
 				54C3E5872572A1A400E1D455 /* SmallRectangleCell.xib in Resources */,
@@ -303,6 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54759190258DE6D4008E865C /* FourthData.swift in Sources */,
+				54759193258DE72C008E865C /* FifthData.swift in Sources */,
 				5494995325751D6100DC1078 /* SecondData.swift in Sources */,
 				548F69462570F435006B351E /* BigRectangleCell.swift in Sources */,
 				54C3E5862572A1A400E1D455 /* SmallRectangleCell.swift in Sources */,
@@ -311,7 +332,9 @@
 				54C3E5A125739FF200E1D455 /* UIColor+Extension.swift in Sources */,
 				5492EDC0256D69680032FB4C /* ViewController.swift in Sources */,
 				5494993F25750F7300DC1078 /* ExploreTableViewCell.swift in Sources */,
+				5475919E258DFF61008E865C /* MoodTableViewCell.swift in Sources */,
 				5492EDBC256D69680032FB4C /* AppDelegate.swift in Sources */,
+				5475918D258DE69E008E865C /* ThirdData.swift in Sources */,
 				548F694C2570F496006B351E /* MiddleSquareCell.swift in Sources */,
 				5494994E25751A8900DC1078 /* NewSongTableViewCell.swift in Sources */,
 				54C3E58B2572A23000E1D455 /* SmallRectangle.swift in Sources */,
@@ -319,6 +342,7 @@
 				54C3E58F2573665000E1D455 /* TableShapeCell.swift in Sources */,
 				5494993825750E2F00DC1078 /* AppleMusicVC.swift in Sources */,
 				5492EDBE256D69680032FB4C /* SceneDelegate.swift in Sources */,
+				54759196258DE764008E865C /* SixthData.swift in Sources */,
 				54C3E59D2573977B00E1D455 /* TableShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

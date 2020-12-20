@@ -13,6 +13,10 @@ class AppleMusicVC: UIViewController {
     
     var firstArray = FirstData()
     var secondArray = SecondData()
+    var thirdArray = ThirdData()
+    var fourthArray = FourthData()
+    var fifthArray = FifthData()
+    var sixthArray = SixthData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +26,7 @@ class AppleMusicVC: UIViewController {
         
         self.mainTableView.register(ExploreTableViewCell.nib(), forCellReuseIdentifier: ExploreTableViewCell.identifier)
         self.mainTableView.register(NewSongTableViewCell.nib(), forCellReuseIdentifier: NewSongTableViewCell.identifier)
+        self.mainTableView.register(MoodTableViewCell.nib(), forCellReuseIdentifier: MoodTableViewCell.identifier)
         mainTableView.delegate = self
         mainTableView.dataSource = self
         // Do any additional setup after loading the view.
@@ -38,6 +43,10 @@ extension AppleMusicVC: UITableViewDataSource{
         if(indexPath.row == 0) {
             return 300
         }else if(indexPath.row == 1){
+            return 230
+        }else if(indexPath.row == 2){
+            return 160
+        }else if(indexPath.row == 3){
             return 230
         }else{
             return 0
@@ -59,6 +68,24 @@ extension AppleMusicVC: UITableViewDataSource{
             }
                 //table view cell 내의 collection view에게 데이터 전달
                 let rowArray = secondArray.objectsArray
+                cell.updateCellWith(row: rowArray)
+                
+                return cell
+        }else if(indexPath.row == 2) {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: MoodTableViewCell.identifier) as? MoodTableViewCell else{
+                return UITableViewCell()
+            }
+                //table view cell 내의 collection view에게 데이터 전달
+                let rowArray = thirdArray.objectsArray
+                cell.updateCellWith(row: rowArray)
+                
+                return cell
+        }else if(indexPath.row == 3) {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: NewSongTableViewCell.identifier) as? NewSongTableViewCell else{
+                return UITableViewCell()
+            }
+                //table view cell 내의 collection view에게 데이터 전달
+                let rowArray = fourthArray.objectsArray
                 cell.updateCellWith(row: rowArray)
                 
                 return cell

@@ -8,7 +8,6 @@
 import Foundation
 
 struct SecondData {
-    
     var objectsArray = [        
             MiddleSquare(albumArtName: "albumArt1", firstLabelName: "오늘의 신곡", secondLabelName: "Apple Music 팝"),
             MiddleSquare(albumArtName: "albumArt2", firstLabelName: "오늘의 히트곡", secondLabelName: "Apple Music 힙합/웹"),

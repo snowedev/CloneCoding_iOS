@@ -1,29 +1,29 @@
 //
-//  NewSongTableViewCell.swift
+//  MoodTableViewCell.swift
 //  AppleMusic
 //
-//  Created by 이원석 on 2020/11/30.
+//  Created by 이원석 on 2020/12/19.
 //
 
 import UIKit
 
-class NewSongTableViewCell: UITableViewCell {
-    static let identifier = "NewSongTableViewCell"
+class MoodTableViewCell: UITableViewCell {
+    static let identifier = "MoodTableViewCell"
     @IBOutlet weak var topGrLine: UILabel!
-    @IBOutlet weak var newSongCollectionView: UICollectionView!
-    
-    var newsong : [MiddleSquare] = []
+    @IBOutlet weak var moodCollectionView: UICollectionView!
+        
+    var mood : [SmallRectangle] = []
     
     static func nib() -> UINib {
-        return UINib(nibName: "NewSongTableViewCell", bundle: nil)
+        return UINib(nibName: "MoodTableViewCell", bundle: nil)
     }
     override func awakeFromNib() {
         super.awakeFromNib()
         
         self.topGrLine.backgroundColor = .brightDarkGrey
-        self.newSongCollectionView.register(MiddleSquareCell.nib(), forCellWithReuseIdentifier: MiddleSquareCell.identifier)
-        self.newSongCollectionView.delegate = self
-        self.newSongCollectionView.dataSource = self
+        self.moodCollectionView.register(SmallRectangleCell.nib(), forCellWithReuseIdentifier: SmallRectangleCell.identifier)
+        self.moodCollectionView.delegate = self
+        self.moodCollectionView.dataSource = self
         // Initialization code
     }
 
@@ -35,32 +35,32 @@ class NewSongTableViewCell: UITableViewCell {
     
 }
 
-extension NewSongTableViewCell: UICollectionViewDelegate{
+extension MoodTableViewCell: UICollectionViewDelegate{
 }
-extension NewSongTableViewCell: UICollectionViewDataSource{
+extension MoodTableViewCell: UICollectionViewDataSource{
     
-    func updateCellWith(row: [MiddleSquare]) {
-        self.newsong = row
-        self.newSongCollectionView.reloadData()
+    func updateCellWith(row: [SmallRectangle]) {
+        self.mood = row
+        self.moodCollectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return newsong.count
+        return mood.count
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MiddleSquareCell.identifier, for: indexPath) as? MiddleSquareCell else{
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallRectangleCell.identifier, for: indexPath) as? SmallRectangleCell else{
             return UICollectionViewCell()
         }
         
-        cell.setCell(middlesquare: newsong[indexPath.row])
+        cell.setCell(smallrectangle: mood[indexPath.row])
         return cell
     }
     
 }
 
-extension NewSongTableViewCell: UICollectionViewDelegateFlowLayout{
+extension MoodTableViewCell: UICollectionViewDelegateFlowLayout{
     
     //MARK: - Cell 사이즈
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
