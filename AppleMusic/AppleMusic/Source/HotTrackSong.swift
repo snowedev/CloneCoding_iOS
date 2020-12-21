@@ -1,13 +1,13 @@
 //
-//  TableShape.swift
+//  HotTrackSong.swift
 //  AppleMusic
 //
-//  Created by 이원석 on 2020/11/29.
+//  Created by 이원석 on 2020/12/21.
 //
 
 import Foundation
 
-struct TableShape {
+struct HotTrackSong {
     let imageName : String
     let songLabelName: String
     let singerLabelName: String

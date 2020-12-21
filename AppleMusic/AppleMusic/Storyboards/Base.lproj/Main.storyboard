@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0cR-lU-Lqn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0cR-lU-Lqn">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -487,7 +488,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.77134380920000001" green="0.1687369494" blue="0.064240859380000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" name="전체보기"/>
+                        <color key="selectedImageTintColor" name="전체보기"/>
                     </tabBar>
                     <connections>
                         <segue destination="2Ae-Tq-F2l" kind="relationship" relationship="viewControllers" id="1ax-O6-DU7"/>
@@ -501,13 +503,16 @@
         <scene sceneID="cYm-De-rC5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Ae-Tq-F2l" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="둘러보기" image="square.grid.2x2.fill" id="Lgl-gM-gww">
+                    <tabBarItem key="tabBarItem" title="둘러보기" image="square.grid.2x2.fill" catalog="system" id="Lgl-gM-gww">
                         <imageReference key="selectedImage" image="square.grid.2x2.fill" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eU6-BB-V8e">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -521,7 +526,9 @@
     </scenes>
     <resources>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
-        <image name="square.grid.2x2.fill" width="128" height="128"/>
+        <namedColor name="전체보기">
+            <color red="1" green="0.25600001215934753" blue="0.27799999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

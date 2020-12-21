@@ -9,7 +9,6 @@ import UIKit
 
 class NewSongTableViewCell: UITableViewCell {
     static let identifier = "NewSongTableViewCell"
-    @IBOutlet weak var topGrLine: UILabel!
     @IBOutlet weak var newSongCollectionView: UICollectionView!
     
     var newsong : [MiddleSquare] = []
@@ -20,7 +19,6 @@ class NewSongTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.topGrLine.backgroundColor = .brightDarkGrey
         self.newSongCollectionView.register(MiddleSquareCell.nib(), forCellWithReuseIdentifier: MiddleSquareCell.identifier)
         self.newSongCollectionView.delegate = self
         self.newSongCollectionView.dataSource = self

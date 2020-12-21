@@ -8,7 +8,7 @@
 import UIKit
 
 class AppleMusicVC: UIViewController {
-
+    
     @IBOutlet weak var mainTableView: UITableView!
     
     var firstArray = FirstData()
@@ -20,6 +20,7 @@ class AppleMusicVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        custom_style()
         
         // 테이블 뷰 경계션 없애기
         mainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
@@ -27,11 +28,20 @@ class AppleMusicVC: UIViewController {
         self.mainTableView.register(ExploreTableViewCell.nib(), forCellReuseIdentifier: ExploreTableViewCell.identifier)
         self.mainTableView.register(NewSongTableViewCell.nib(), forCellReuseIdentifier: NewSongTableViewCell.identifier)
         self.mainTableView.register(MoodTableViewCell.nib(), forCellReuseIdentifier: MoodTableViewCell.identifier)
+        self.mainTableView.register(EnjoyTableViewCell.nib(), forCellReuseIdentifier: EnjoyTableViewCell.identifier)
+        self.mainTableView.register(HotTrackTableViewCell.nib(), forCellReuseIdentifier: HotTrackTableViewCell.identifier)
         mainTableView.delegate = self
         mainTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
+    func custom_style() {
+        // 네비게이션 바 .large
+        self.tabBarController?.tabBar.alpha = 0.95
+        self.navigationController?.navigationBar.alpha = 0.95
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .automatic
     
+    }
 }
 
 extension AppleMusicVC: UITableViewDataSource{
@@ -45,9 +55,11 @@ extension AppleMusicVC: UITableViewDataSource{
         }else if(indexPath.row == 1){
             return 230
         }else if(indexPath.row == 2){
-            return 160
+            return 180
         }else if(indexPath.row == 3){
             return 230
+        }else if(indexPath.row == 4){
+            return 320
         }else{
             return 0
         }
@@ -57,46 +69,53 @@ extension AppleMusicVC: UITableViewDataSource{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ExploreTableViewCell.identifier) as? ExploreTableViewCell else{
                 return UITableViewCell()
             }
-                //table view cell 내의 collection view에게 데이터 전달
-                let rowArray = firstArray.objectsArray
-                cell.updateCellWith(row: rowArray)
-                
-                return cell
+            //table view cell 내의 collection view에게 데이터 전달
+            let rowArray = firstArray.objectsArray
+            cell.updateCellWith(row: rowArray)
+            
+            return cell
         }else if(indexPath.row == 1) {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: NewSongTableViewCell.identifier) as? NewSongTableViewCell else{
                 return UITableViewCell()
             }
-                //table view cell 내의 collection view에게 데이터 전달
-                let rowArray = secondArray.objectsArray
-                cell.updateCellWith(row: rowArray)
-                
-                return cell
+            //table view cell 내의 collection view에게 데이터 전달
+            let rowArray = secondArray.objectsArray
+            cell.updateCellWith(row: rowArray)
+            
+            return cell
         }else if(indexPath.row == 2) {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: MoodTableViewCell.identifier) as? MoodTableViewCell else{
                 return UITableViewCell()
             }
-                //table view cell 내의 collection view에게 데이터 전달
-                let rowArray = thirdArray.objectsArray
-                cell.updateCellWith(row: rowArray)
-                
-                return cell
+            //table view cell 내의 collection view에게 데이터 전달
+            let rowArray = thirdArray.objectsArray
+            cell.updateCellWith(row: rowArray)
+            
+            return cell
         }else if(indexPath.row == 3) {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: NewSongTableViewCell.identifier) as? NewSongTableViewCell else{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: EnjoyTableViewCell.identifier) as? EnjoyTableViewCell else{
                 return UITableViewCell()
             }
-                //table view cell 내의 collection view에게 데이터 전달
-                let rowArray = fourthArray.objectsArray
-                cell.updateCellWith(row: rowArray)
-                
-                return cell
+            //table view cell 내의 collection view에게 데이터 전달
+            let rowArray = fourthArray.objectsArray
+            cell.updateCellWith(row: rowArray)
+            
+            return cell
+        }else if(indexPath.row == 4) {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: HotTrackTableViewCell.identifier) as? HotTrackTableViewCell else{
+                return UITableViewCell()
+            }
+            //table view cell 내의 collection view에게 데이터 전달
+            let rowArray = fifthArray.objectsArray
+            cell.updateCellWith(row: rowArray)
+            
+            return cell
         }else{
             return UITableViewCell()
         }
         
     }
 }
-
-
 
 extension AppleMusicVC: UITableViewDelegate{
 }

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,20 +19,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOI-hu-Ik5">
-                        <rect key="frame" x="0.0" y="6" width="451" height="338"/>
+                        <rect key="frame" x="0.0" y="6.5" width="451" height="337.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJU-n6-P4t">
-                                <rect key="frame" x="0.0" y="0.0" width="451" height="1"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="0.0" width="451" height="0.5"/>
+                                <color key="backgroundColor" name="greyLine"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="Tbp-Nk-JQ4"/>
+                                    <constraint firstAttribute="height" constant="0.5" id="Tbp-Nk-JQ4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="9xH-Gg-i83">
-                                <rect key="frame" x="0.0" y="6" width="111.5" height="59"/>
+                                <rect key="frame" x="0.0" y="5.5" width="111.5" height="59"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 플레이리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwx-Wd-mAB">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="12"/>
@@ -54,7 +55,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N74-gL-Hen">
-                                <rect key="frame" x="0.0" y="70" width="451" height="268"/>
+                                <rect key="frame" x="0.0" y="69.5" width="451" height="268"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="N74-gL-Hen" secondAttribute="height" multiplier="451:268" id="m6A-ar-Yqd"/>
                                 </constraints>
@@ -90,7 +91,6 @@
             <connections>
                 <outlet property="albumImageView" destination="N74-gL-Hen" id="vOb-rC-ZkD"/>
                 <outlet property="categoryLabel" destination="Nwx-Wd-mAB" id="eXq-fQ-gRd"/>
-                <outlet property="greyLine" destination="dJU-n6-P4t" id="F3m-Wd-Hx0"/>
                 <outlet property="musicTitleLabel" destination="brC-OK-4Ij" id="EdN-Um-CdN"/>
                 <outlet property="singerLabel" destination="WDu-f7-hoZ" id="aKZ-Zh-eaV"/>
             </connections>
@@ -98,6 +98,9 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <namedColor name="greyLine">
+            <color red="0.69602902475293416" green="0.6984755276870771" blue="0.70581503648950594" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

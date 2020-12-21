@@ -13,12 +13,18 @@
 		54759196258DE764008E865C /* SixthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54759195258DE764008E865C /* SixthData.swift */; };
 		5475919E258DFF61008E865C /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475919C258DFF61008E865C /* MoodTableViewCell.swift */; };
 		5475919F258DFF61008E865C /* MoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5475919D258DFF61008E865C /* MoodTableViewCell.xib */; };
+		548DEFE325908BC60081FCD1 /* EnjoyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DEFE125908BC60081FCD1 /* EnjoyTableViewCell.swift */; };
+		548DEFE425908BC60081FCD1 /* EnjoyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548DEFE225908BC60081FCD1 /* EnjoyTableViewCell.xib */; };
+		548DEFE92590A0BF0081FCD1 /* HotTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DEFE72590A0BF0081FCD1 /* HotTrackTableViewCell.swift */; };
+		548DEFEA2590A0BF0081FCD1 /* HotTrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548DEFE82590A0BF0081FCD1 /* HotTrackTableViewCell.xib */; };
+		548DEFF12590A57F0081FCD1 /* HotTrackCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DEFEF2590A57F0081FCD1 /* HotTrackCollectionCell.swift */; };
+		548DEFF22590A57F0081FCD1 /* HotTrackCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548DEFF02590A57F0081FCD1 /* HotTrackCollectionCell.xib */; };
+		548DEFFD2590BFAD0081FCD1 /* HotTrackSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DEFFC2590BFAD0081FCD1 /* HotTrackSong.swift */; };
 		548F69462570F435006B351E /* BigRectangleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F69452570F435006B351E /* BigRectangleCell.swift */; };
 		548F694C2570F496006B351E /* MiddleSquareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548F694A2570F495006B351E /* MiddleSquareCell.swift */; };
 		548F694D2570F496006B351E /* MiddleSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548F694B2570F496006B351E /* MiddleSquareCell.xib */; };
 		5492EDBC256D69680032FB4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5492EDBB256D69680032FB4C /* AppDelegate.swift */; };
 		5492EDBE256D69680032FB4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5492EDBD256D69680032FB4C /* SceneDelegate.swift */; };
-		5492EDC0256D69680032FB4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5492EDBF256D69680032FB4C /* ViewController.swift */; };
 		5492EDC3256D69680032FB4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5492EDC1256D69680032FB4C /* Main.storyboard */; };
 		5492EDC5256D696A0032FB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5492EDC4256D696A0032FB4C /* Assets.xcassets */; };
 		5492EDC8256D696A0032FB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5492EDC6256D696A0032FB4C /* LaunchScreen.storyboard */; };
@@ -35,9 +41,9 @@
 		54C3E5862572A1A400E1D455 /* SmallRectangleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E5842572A1A400E1D455 /* SmallRectangleCell.swift */; };
 		54C3E5872572A1A400E1D455 /* SmallRectangleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C3E5852572A1A400E1D455 /* SmallRectangleCell.xib */; };
 		54C3E58B2572A23000E1D455 /* SmallRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E58A2572A23000E1D455 /* SmallRectangle.swift */; };
-		54C3E58F2573665000E1D455 /* TableShapeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E58D2573665000E1D455 /* TableShapeCell.swift */; };
-		54C3E5902573665000E1D455 /* TableShapeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C3E58E2573665000E1D455 /* TableShapeCell.xib */; };
-		54C3E59D2573977B00E1D455 /* TableShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E59C2573977B00E1D455 /* TableShape.swift */; };
+		54C3E58F2573665000E1D455 /* HotTrackSongTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E58D2573665000E1D455 /* HotTrackSongTableCell.swift */; };
+		54C3E5902573665000E1D455 /* HotTrackSongTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C3E58E2573665000E1D455 /* HotTrackSongTableCell.xib */; };
+		54C3E59D2573977B00E1D455 /* HotTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E59C2573977B00E1D455 /* HotTrack.swift */; };
 		54C3E5A125739FF200E1D455 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E5A025739FF200E1D455 /* UIColor+Extension.swift */; };
 		54C3E5A52573F5C900E1D455 /* FirstData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3E5A42573F5C900E1D455 /* FirstData.swift */; };
 /* End PBXBuildFile section */
@@ -49,14 +55,20 @@
 		54759195258DE764008E865C /* SixthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthData.swift; sourceTree = "<group>"; };
 		5475919C258DFF61008E865C /* MoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
 		5475919D258DFF61008E865C /* MoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoodTableViewCell.xib; sourceTree = "<group>"; };
+		548DEFE125908BC60081FCD1 /* EnjoyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyTableViewCell.swift; sourceTree = "<group>"; };
+		548DEFE225908BC60081FCD1 /* EnjoyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnjoyTableViewCell.xib; sourceTree = "<group>"; };
+		548DEFE72590A0BF0081FCD1 /* HotTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTrackTableViewCell.swift; sourceTree = "<group>"; };
+		548DEFE82590A0BF0081FCD1 /* HotTrackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotTrackTableViewCell.xib; sourceTree = "<group>"; };
+		548DEFEF2590A57F0081FCD1 /* HotTrackCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTrackCollectionCell.swift; sourceTree = "<group>"; };
+		548DEFF02590A57F0081FCD1 /* HotTrackCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotTrackCollectionCell.xib; sourceTree = "<group>"; };
+		548DEFFC2590BFAD0081FCD1 /* HotTrackSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTrackSong.swift; sourceTree = "<group>"; };
 		548F69422570F400006B351E /* BigRectangleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigRectangleCell.xib; sourceTree = "<group>"; };
 		548F69452570F435006B351E /* BigRectangleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRectangleCell.swift; sourceTree = "<group>"; };
 		548F694A2570F495006B351E /* MiddleSquareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MiddleSquareCell.swift; path = AppleMusic/Cells/Collection/MiddleSquareCell.swift; sourceTree = SOURCE_ROOT; };
-		548F694B2570F496006B351E /* MiddleSquareCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MiddleSquareCell.xib; path = AppleMusic/Cells/xibs/CollectionCell/MiddleSquareCell.xib; sourceTree = SOURCE_ROOT; };
+		548F694B2570F496006B351E /* MiddleSquareCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MiddleSquareCell.xib; path = AppleMusic/Cells/CollectionCell/MiddleSquareCell.xib; sourceTree = SOURCE_ROOT; };
 		5492EDB8256D69680032FB4C /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5492EDBB256D69680032FB4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5492EDBD256D69680032FB4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5492EDBF256D69680032FB4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5492EDC2256D69680032FB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5492EDC4256D696A0032FB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5492EDC7256D696A0032FB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,9 +85,9 @@
 		54C3E5842572A1A400E1D455 /* SmallRectangleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRectangleCell.swift; sourceTree = "<group>"; };
 		54C3E5852572A1A400E1D455 /* SmallRectangleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallRectangleCell.xib; sourceTree = "<group>"; };
 		54C3E58A2572A23000E1D455 /* SmallRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRectangle.swift; sourceTree = "<group>"; };
-		54C3E58D2573665000E1D455 /* TableShapeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableShapeCell.swift; sourceTree = "<group>"; };
-		54C3E58E2573665000E1D455 /* TableShapeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableShapeCell.xib; sourceTree = "<group>"; };
-		54C3E59C2573977B00E1D455 /* TableShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableShape.swift; sourceTree = "<group>"; };
+		54C3E58D2573665000E1D455 /* HotTrackSongTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTrackSongTableCell.swift; sourceTree = "<group>"; };
+		54C3E58E2573665000E1D455 /* HotTrackSongTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotTrackSongTableCell.xib; sourceTree = "<group>"; };
+		54C3E59C2573977B00E1D455 /* HotTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTrack.swift; sourceTree = "<group>"; };
 		54C3E5A025739FF200E1D455 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		54C3E5A42573F5C900E1D455 /* FirstData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,20 +106,12 @@
 		548F69482570F43A006B351E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				549499462575107400DC1078 /* Table */,
 				549499452575106C00DC1078 /* Collection */,
-				548F69492570F44A006B351E /* xibs */,
+				549499432575104400DC1078 /* CollectionCell */,
+				549499462575107400DC1078 /* Table */,
+				549499442575105200DC1078 /* TableCell */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		548F69492570F44A006B351E /* xibs */ = {
-			isa = PBXGroup;
-			children = (
-				549499442575105200DC1078 /* TableCell */,
-				549499432575104400DC1078 /* CollectionCell */,
-			);
-			path = xibs;
 			sourceTree = "<group>";
 		};
 		5492EDAF256D69680032FB4C = {
@@ -143,7 +147,6 @@
 		5494993A25750E3500DC1078 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				5492EDBF256D69680032FB4C /* ViewController.swift */,
 				5494993725750E2F00DC1078 /* AppleMusicVC.swift */,
 			);
 			path = VC;
@@ -164,7 +167,7 @@
 				548F69422570F400006B351E /* BigRectangleCell.xib */,
 				548F694B2570F496006B351E /* MiddleSquareCell.xib */,
 				54C3E5852572A1A400E1D455 /* SmallRectangleCell.xib */,
-				54C3E58E2573665000E1D455 /* TableShapeCell.xib */,
+				548DEFF02590A57F0081FCD1 /* HotTrackCollectionCell.xib */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -172,9 +175,12 @@
 		549499442575105200DC1078 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
-				5494994D25751A8900DC1078 /* NewSongTableViewCell.xib */,
+				548DEFE225908BC60081FCD1 /* EnjoyTableViewCell.xib */,
 				5494993E25750F7300DC1078 /* ExploreTableViewCell.xib */,
+				54C3E58E2573665000E1D455 /* HotTrackSongTableCell.xib */,
+				548DEFE82590A0BF0081FCD1 /* HotTrackTableViewCell.xib */,
 				5475919D258DFF61008E865C /* MoodTableViewCell.xib */,
+				5494994D25751A8900DC1078 /* NewSongTableViewCell.xib */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -183,9 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				548F69452570F435006B351E /* BigRectangleCell.swift */,
-				54C3E58D2573665000E1D455 /* TableShapeCell.swift */,
-				54C3E5842572A1A400E1D455 /* SmallRectangleCell.swift */,
 				548F694A2570F495006B351E /* MiddleSquareCell.swift */,
+				54C3E5842572A1A400E1D455 /* SmallRectangleCell.swift */,
+				548DEFEF2590A57F0081FCD1 /* HotTrackCollectionCell.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -193,9 +199,12 @@
 		549499462575107400DC1078 /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				548DEFE125908BC60081FCD1 /* EnjoyTableViewCell.swift */,
 				5494993D25750F7300DC1078 /* ExploreTableViewCell.swift */,
-				5494994C25751A8900DC1078 /* NewSongTableViewCell.swift */,
+				548DEFE72590A0BF0081FCD1 /* HotTrackTableViewCell.swift */,
+				54C3E58D2573665000E1D455 /* HotTrackSongTableCell.swift */,
 				5475919C258DFF61008E865C /* MoodTableViewCell.swift */,
+				5494994C25751A8900DC1078 /* NewSongTableViewCell.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -206,7 +215,8 @@
 				54C3E57825726B2C00E1D455 /* BigRectangle.swift */,
 				54C3E57D25726CE600E1D455 /* MiddleSquare.swift */,
 				54C3E58A2572A23000E1D455 /* SmallRectangle.swift */,
-				54C3E59C2573977B00E1D455 /* TableShape.swift */,
+				54C3E59C2573977B00E1D455 /* HotTrack.swift */,
+				548DEFFC2590BFAD0081FCD1 /* HotTrackSong.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -304,13 +314,16 @@
 				548F694D2570F496006B351E /* MiddleSquareCell.xib in Resources */,
 				5494994F25751A8900DC1078 /* NewSongTableViewCell.xib in Resources */,
 				5492EDC8256D696A0032FB4C /* LaunchScreen.storyboard in Resources */,
+				548DEFE425908BC60081FCD1 /* EnjoyTableViewCell.xib in Resources */,
 				5492EDC5256D696A0032FB4C /* Assets.xcassets in Resources */,
 				5494994025750F7300DC1078 /* ExploreTableViewCell.xib in Resources */,
 				5492EDC3256D69680032FB4C /* Main.storyboard in Resources */,
+				548DEFEA2590A0BF0081FCD1 /* HotTrackTableViewCell.xib in Resources */,
 				5475919F258DFF61008E865C /* MoodTableViewCell.xib in Resources */,
 				54C3E581257272F000E1D455 /* BigRectangleCell.xib in Resources */,
-				54C3E5902573665000E1D455 /* TableShapeCell.xib in Resources */,
+				54C3E5902573665000E1D455 /* HotTrackSongTableCell.xib in Resources */,
 				54C3E5872572A1A400E1D455 /* SmallRectangleCell.xib in Resources */,
+				548DEFF22590A57F0081FCD1 /* HotTrackCollectionCell.xib in Resources */,
 				5494993525750DCE00DC1078 /* AppleMusic.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,20 +343,23 @@
 				54C3E5A52573F5C900E1D455 /* FirstData.swift in Sources */,
 				54C3E57E25726CE600E1D455 /* MiddleSquare.swift in Sources */,
 				54C3E5A125739FF200E1D455 /* UIColor+Extension.swift in Sources */,
-				5492EDC0256D69680032FB4C /* ViewController.swift in Sources */,
+				548DEFE92590A0BF0081FCD1 /* HotTrackTableViewCell.swift in Sources */,
 				5494993F25750F7300DC1078 /* ExploreTableViewCell.swift in Sources */,
 				5475919E258DFF61008E865C /* MoodTableViewCell.swift in Sources */,
 				5492EDBC256D69680032FB4C /* AppDelegate.swift in Sources */,
 				5475918D258DE69E008E865C /* ThirdData.swift in Sources */,
 				548F694C2570F496006B351E /* MiddleSquareCell.swift in Sources */,
+				548DEFE325908BC60081FCD1 /* EnjoyTableViewCell.swift in Sources */,
 				5494994E25751A8900DC1078 /* NewSongTableViewCell.swift in Sources */,
 				54C3E58B2572A23000E1D455 /* SmallRectangle.swift in Sources */,
+				548DEFFD2590BFAD0081FCD1 /* HotTrackSong.swift in Sources */,
 				54C3E57925726B2C00E1D455 /* BigRectangle.swift in Sources */,
-				54C3E58F2573665000E1D455 /* TableShapeCell.swift in Sources */,
+				54C3E58F2573665000E1D455 /* HotTrackSongTableCell.swift in Sources */,
 				5494993825750E2F00DC1078 /* AppleMusicVC.swift in Sources */,
 				5492EDBE256D69680032FB4C /* SceneDelegate.swift in Sources */,
 				54759196258DE764008E865C /* SixthData.swift in Sources */,
-				54C3E59D2573977B00E1D455 /* TableShape.swift in Sources */,
+				548DEFF12590A57F0081FCD1 /* HotTrackCollectionCell.swift in Sources */,
+				54C3E59D2573977B00E1D455 /* HotTrack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

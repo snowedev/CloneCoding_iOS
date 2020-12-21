@@ -14,16 +14,6 @@ class BigRectangleCell: UICollectionViewCell {
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var musicTitleLabel: UILabel!
     @IBOutlet weak var singerLabel: UILabel!
-    @IBOutlet weak var greyLine: UILabel!
-    
-    func setBingRectangleData(imageName: String, categoryName: String, musicName: String, singerName: String){
-        self.albumImageView.image = UIImage(named: imageName)
-        self.categoryLabel.text = categoryName
-        self.categoryLabel.textColor = .brownGrey
-        self.musicTitleLabel.text = musicName
-        self.singerLabel.text = singerName
-        self.singerLabel.textColor = .brownGrey
-    }
     
     func setCell(explore: BigRectangle){
         albumImageView.image = UIImage(named: explore.bannerName)
@@ -42,6 +32,5 @@ class BigRectangleCell: UICollectionViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        greyLine.backgroundColor = .brightDarkGrey
     }
 }

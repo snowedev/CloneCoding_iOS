@@ -13,12 +13,6 @@ class SmallRectangleCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var firstLabel: UILabel!
     
-    func setSmallRectangleData(imageName: String, firstLabelName: String){
-        self.imageView.image = UIImage(named: imageName)
-        self.firstLabel.text = firstLabelName
-        
-    }
-    
     func setCell(smallrectangle: SmallRectangle){
         imageView.image = UIImage(named: smallrectangle.imageName)
         firstLabel.text = smallrectangle.firstLabelName

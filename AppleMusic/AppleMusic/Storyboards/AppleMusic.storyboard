@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hqn-6E-Ndf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hqn-6E-Ndf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Apple MusicVC-->
+        <!--둘러보기-->
         <scene sceneID="zRD-JX-eZq">
             <objects>
                 <viewController id="gU4-am-xMl" customClass="AppleMusicVC" customModule="AppleMusic" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +31,7 @@
                             <constraint firstItem="vN1-aZ-o7C" firstAttribute="bottom" secondItem="PBT-13-Xwi" secondAttribute="bottom" id="zEs-Ux-S88"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Rsn-AP-MIt"/>
+                    <navigationItem key="navigationItem" title="둘러보기" id="Rsn-AP-MIt"/>
                     <connections>
                         <outlet property="mainTableView" destination="PBT-13-Xwi" id="u60-nW-38A"/>
                     </connections>
@@ -48,6 +49,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="전체보기"/>
+                        <color key="selectedImageTintColor" name="전체보기"/>
                     </tabBar>
                     <connections>
                         <segue destination="dIu-DA-B92" kind="relationship" relationship="viewControllers" id="bhI-Dj-BwA"/>
@@ -61,11 +64,17 @@
         <scene sceneID="w3D-NS-qrc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dIu-DA-B92" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oLa-qw-Bo2"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="square.grid.2x2.fill" catalog="system" id="oLa-qw-Bo2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6S0-EC-WEy">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="35"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -78,6 +87,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="전체보기">
+            <color red="1" green="0.25600001215934753" blue="0.27799999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

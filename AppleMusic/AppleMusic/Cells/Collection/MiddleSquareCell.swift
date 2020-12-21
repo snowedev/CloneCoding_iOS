@@ -14,13 +14,6 @@ class MiddleSquareCell: UICollectionViewCell {
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     
-    func setMiddleSquareData(ImageName: String, firstLabel: String, secondLabel: String){
-        self.albumImageView.image = UIImage(named: ImageName)
-        self.firstLabel.text = firstLabel
-        self.secondLabel.text = secondLabel
-        self.secondLabel.textColor = .brownGrey
-    }
-    
     func setCell(middlesquare: MiddleSquare){
         albumImageView.image = UIImage(named: middlesquare.albumArtName)
         firstLabel.text = middlesquare.firstLabelName

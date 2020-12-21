@@ -1,27 +1,28 @@
 //
-//  MoodTableViewCell.swift
+//  EnjoyTableViewCell.swift
 //  AppleMusic
 //
-//  Created by 이원석 on 2020/12/19.
+//  Created by 이원석 on 2020/12/21.
 //
 
 import UIKit
 
-class MoodTableViewCell: UITableViewCell {
-    static let identifier = "MoodTableViewCell"
-    @IBOutlet weak var moodCollectionView: UICollectionView!
+class EnjoyTableViewCell: UITableViewCell {
+    static let identifier = "EnjoyTableViewCell"
+    @IBOutlet weak var enjoyCollectionView: UICollectionView!
+    
         
-    var mood : [SmallRectangle] = []
+    var enjoy : [MiddleSquare] = []
     
     static func nib() -> UINib {
-        return UINib(nibName: "MoodTableViewCell", bundle: nil)
+        return UINib(nibName: "EnjoyTableViewCell", bundle: nil)
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-    
-        self.moodCollectionView.register(SmallRectangleCell.nib(), forCellWithReuseIdentifier: SmallRectangleCell.identifier)
-        self.moodCollectionView.delegate = self
-        self.moodCollectionView.dataSource = self
+        
+        self.enjoyCollectionView.register(MiddleSquareCell.nib(), forCellWithReuseIdentifier: MiddleSquareCell.identifier)
+        self.enjoyCollectionView.delegate = self
+        self.enjoyCollectionView.dataSource = self
         // Initialization code
     }
 
@@ -33,32 +34,32 @@ class MoodTableViewCell: UITableViewCell {
     
 }
 
-extension MoodTableViewCell: UICollectionViewDelegate{
+extension EnjoyTableViewCell: UICollectionViewDelegate{
 }
-extension MoodTableViewCell: UICollectionViewDataSource{
+extension EnjoyTableViewCell: UICollectionViewDataSource{
     
-    func updateCellWith(row: [SmallRectangle]) {
-        self.mood = row
-        self.moodCollectionView.reloadData()
+    func updateCellWith(row: [MiddleSquare]) {
+        self.enjoy = row
+        self.enjoyCollectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return mood.count
+        return enjoy.count
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallRectangleCell.identifier, for: indexPath) as? SmallRectangleCell else{
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MiddleSquareCell.identifier, for: indexPath) as? MiddleSquareCell else{
             return UICollectionViewCell()
         }
         
-        cell.setCell(smallrectangle: mood[indexPath.row])
+        cell.setCell(middlesquare: enjoy[indexPath.row])
         return cell
     }
     
 }
 
-extension MoodTableViewCell: UICollectionViewDelegateFlowLayout{
+extension EnjoyTableViewCell: UICollectionViewDelegateFlowLayout{
     
     //MARK: - Cell 사이즈
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
