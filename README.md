@@ -8,5 +8,6 @@
 | 10/11~11/2(중간고사 겹침) | 당근마켓 1주차 |[🥕](./readme/README_week1.md)|
 | 11/2~11/9 | 당근마켓 2주차 |[🥕](./readme/README_week2.md)|
 | 11/9~11/16 | 1,2,3주차 종합 구현 기능 정리 |[🥕](./readme/README_DIL.md)|
-| 11/23~11/30 | 애플뮤직 |[Music](./readme/README_appleMusic_week1.md)|
+| 11/23~11/30 | 애플뮤직 1주차 |[Music](./readme/README_appleMusic_week1.md)|
+| 11/30~12/21(기말고사 겹침) | 애플뮤직 2주차 |[Music](./readme/README_appleMusic_week2.md)|
 ---
