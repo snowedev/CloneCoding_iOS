@@ -14,7 +14,7 @@
 하지만 그렇게 되면 스크롤이 길어질 수록, 수직 스크롤에 대해서는 컬렉션이나 테이블뷰가 아니기 때문에 좋지 못한 구조가 될 것이라고 생각했다.  
 
 
-그래서 새롭게 알게 된 방법으로 뷰를 뜯어고치게 되었다.  
+### 그래서 새롭게 알게 된 방법으로 뷰를 뜯어고치게 되었다.  
 
 
 스크롤 뷰 대신 테이블 뷰로 전체를 감싸고 그 안에서 섹션을 나누어 진행하였다.  
@@ -24,15 +24,11 @@
 대충 이런 구조라고 생각하면 된다. TableView Cell을 Xib파일로 만들어 주었고 TableView Cell안에 들어 갈 CollectionView Cell 또한 Xib로 만들어 주었다.  
 <img width="30%" src="./photo/drawing1.jpg">
 <img width="20%" src="./photo/tbc1.png">
-<img width="10%" src="./photo/cc1.png">
+<img width="10%" src="./photo/cc1.png">  
 가운데 사진의 회색 부분이 CollectionView이며 그 CollectionView에 들어갈 Cell이 우측이다.
 
 
-
-이쯤되면 어느정도 전체적인 구조는 이해가 된 것 같다.
-
-
-
+이쯤되면 어느정도 전체적인 구조는 이해가 된 것 같다.  
 조금 더 세세하게 들어가보자.
 
 ### `MainViewController.swift`
