@@ -20,7 +20,8 @@ class AppleMusicVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        custom_style()
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .automatic
         
         // 테이블 뷰 경계션 없애기
         mainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
@@ -34,15 +35,8 @@ class AppleMusicVC: UIViewController {
         mainTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
-    func custom_style() {
-        // 네비게이션 바 .large
-        self.tabBarController?.tabBar.alpha = 0.95
-        self.navigationController?.navigationBar.alpha = 0.95
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationItem.largeTitleDisplayMode = .automatic
-    
-    }
 }
+
 
 extension AppleMusicVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -119,3 +113,4 @@ extension AppleMusicVC: UITableViewDataSource{
 
 extension AppleMusicVC: UITableViewDelegate{
 }
+

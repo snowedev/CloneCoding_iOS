@@ -9,12 +9,9 @@ import UIKit
 
 class ProductDetailViewController: UIViewController {
     
-    let navigationAppearance = UINavigationBarAppearance()
-    //제품 추가 사진
     @IBOutlet weak var productCollectionView: UICollectionView!
     @IBOutlet weak var productPageControl: UIPageControl!
     @IBOutlet weak var wholeItemScrollViewController: UIScrollView!
-    
     @IBOutlet weak var locLabel: UILabel!
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var uploadTimeLabel: UILabel!
@@ -55,8 +52,12 @@ class ProductDetailViewController: UIViewController {
         
         wholeItemScrollViewController.delegate = self
         
+        // 상태바 글씨색 흰색으로
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+        
         self.navigationController?.navigationBar.isHidden = false
-        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.navigationBar.isTranslucent = true
+        
         heartStatus = false
         naviStyle()
         bottomViewStyle()
@@ -75,19 +76,18 @@ class ProductDetailViewController: UIViewController {
         
     }
     
-    func naviStyle() {
-        navigationAppearance.configureWithTransparentBackground()
-        self.navigationController?.navigationBar.standardAppearance = navigationAppearance
+    func naviStyle(){
         self.navigationController?.navigationBar.topItem?.title = ""
         self.navigationController?.navigationBar.tintColor = .white
+        
+        // 네비 바 전체 Backgrond 이미지, 경계선 삭제
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
+
     
     func bottomViewStyle(){
-        veryBottomView.layer.shadowColor = UIColor.black.cgColor
-        veryBottomView.layer.shadowOffset = CGSize(width: 0, height: 4)
-        //veryBottomView.layer.shadowRadius = 4.0
-        veryBottomView.layer.shadowOpacity = 1
-        veryBottomView.layer.masksToBounds = false // 필수
+        veryBottomView.layer.addBorder([.top, .bottom], color: UIColor.gray, width: 0.5)
     }
     
     func setProductInfo() {
@@ -260,13 +260,44 @@ extension ProductDetailViewController: UIScrollViewDelegate{
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y > 200 {
-            navigationAppearance.configureWithDefaultBackground()
-            navigationAppearance.backgroundColor = .white
-            self.navigationController?.navigationBar.standardAppearance = navigationAppearance
+            self.navigationController?.navigationBar.barStyle = UIBarStyle.default // Status Bar 글씨 색상 흰색
+            
             self.navigationController?.navigationBar.tintColor = .darkGray
+            self.navigationController?.navigationBar.barTintColor = .white
+            self.navigationController?.navigationBar.setBackgroundImage(.none, for: .default)
+            self.navigationController?.navigationBar.shadowImage = .none
         }
         else {
+            self.navigationController?.navigationBar.barStyle = UIBarStyle.black // Status Bar 글씨 색상 검정색
+            self.navigationController?.navigationBar.tintColor = .white
             naviStyle()
+        }
+    }
+}
+
+// MARK: -UIView Border
+extension CALayer {
+    func addBorder(_ arr_edge: [UIRectEdge], color: UIColor, width: CGFloat) {
+        for edge in arr_edge {
+            let border = CALayer()
+            switch edge {
+            case UIRectEdge.top:
+                border.frame = CGRect.init(x: 0, y: 0, width: frame.width, height: width)
+                break
+            case UIRectEdge.bottom:
+                border.frame = CGRect.init(x: 0, y: frame.height - width, width: frame.width, height: width)
+                break
+            case UIRectEdge.left:
+                border.frame = CGRect.init(x: 0, y: 0, width: width, height: frame.height)
+                break
+            case UIRectEdge.right:
+                border.frame = CGRect.init(x: frame.width - width, y: 0, width: width, height: frame.height)
+                break
+            default:
+                break
+            }
+            border.backgroundColor = color.cgColor;
+            self.addSublayer(border)
         }
     }
 }

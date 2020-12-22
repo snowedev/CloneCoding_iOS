@@ -57,8 +57,11 @@
 
 ## 📌 Navigation Bar Custom
 
-`📲 - 추가예정`
+`📲`
 
+<img height="500" src="./simul/NaviBar_simul.gif">
+
+* 
 * [UINavigationBarAppearance](https://zeddios.tistory.com/864)
 * [NavigationBar 속성을 이용한 커스텀](https://zeddios.tistory.com/574)
 * [standard / compact / scrollEdge Appearance](https://zeddios.tistory.com/861)
@@ -90,6 +93,8 @@
 
 ## + 디테일 뷰 구현한 거 추가
 
-`상단 네비 바의 구현이 뭔가 이상하게 안돼서 방법을 알게되면 추가할 예정!`
+`상단 네비 바의 구현이 뭔가 이상하게 안돼서 방법을 알게되면 추가할 예정!-추가완료`
 
 <img height="500" src="./simul/DetailView_simul.gif">
+
+* [UIView 원하는 부분만 Border 주기](https://devsc.tistory.com/62)
