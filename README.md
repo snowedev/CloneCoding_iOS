@@ -1,6 +1,6 @@
 # iOS Clone coding Study
 
-### 개발환경 : <img src ="https://img.shields.io/badge/Swift-5.0-FA7343?logo=swift&logoColor=white"> <img src="https://img.shields.io/badge/Xcode-12.2-1575F9?logo=Xcode&logoColor=1575F9">
+### 개발환경 : <img src ="https://img.shields.io/badge/Swift-5.0-FA7343?logo=swift&logoColor=white"> <img src="https://img.shields.io/badge/Xcode-12.2-1575F9?logo=Xcode&logoColor=white">
 
 | 시작 날짜 | 클론 주제| 수행여부 | README |
 |-------|----------|-------|-------|
