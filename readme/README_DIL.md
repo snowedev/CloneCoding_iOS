@@ -59,7 +59,7 @@
 
 `📲`
 
-<img height="500" src="./simul/NaviBar_simul.gif">
+<img height="300" src="./simul/NaviBar_simul.gif">
 
 * 
 * [UINavigationBarAppearance](https://zeddios.tistory.com/864)
